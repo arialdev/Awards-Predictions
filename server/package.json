@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Varo412",
+  "repository": "https://github.com/Varo412/Awards-Predictions",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
