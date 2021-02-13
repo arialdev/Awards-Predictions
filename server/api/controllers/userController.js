@@ -6,24 +6,25 @@ exports.createUser = function (req, res) {
     let newUser = new User(req.body);
     newUser.save(function (err, user) {
         if (err)
-            res.send(err);
-        res.json(user);
+            return res.status(400).send({"description": "Invalid data or server may be down.", err})
+        return res.status(201).json(user);
     });
 };
 
 exports.listAllUsers = function (req, res) {
     User.find({}, function (err, users) {
         if (err)
-            res.send(err);
+            return res.status(500).send(err);
         res.json(users);
     });
 };
 
-//TODO: Códigos de error
 exports.getUser = function (req, res) {
     User.findById(req.params.userId, function (err, user) {
         if (err)
-            res.send(err);
-        res.json(user);
+            return res.status(400).send({"description": "Invalid resource identifier or server may be down.", err})
+        else if (!user)
+            return res.status(404).send();
+        return res.json(user);
     });
 };

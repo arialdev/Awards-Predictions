@@ -11,14 +11,14 @@ const CategorySchema = new Schema({
     nominees: [{
         type: Schema.Types.ObjectId,
         ref: 'Nominees',
-        votes: {
-            type: Number,
-            default: 0,
-        }
     }],
     winner: {
-        type: Number,
-        default: -1,
+        type: Schema.Types.ObjectId,
+        ref: 'Nominees',
+    },
+    award:{
+        type: Schema.Types.ObjectId,
+        ref: 'AwardEvents',
     },
     Created_date: {
         type: Date,

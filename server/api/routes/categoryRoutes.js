@@ -5,7 +5,7 @@ module.exports = function (app) {
     // user Routes
     app.route('/awardsEvents/:awardId/categories')
         .get(categories.listAllCategories)
-        .post(categories.createCategory);
+        .put(categories.createCategory);
 
     app.route('/awardsEvents/:awardId/categories/:categoryId')
         .get(categories.getCategory)

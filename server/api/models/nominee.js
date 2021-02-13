@@ -12,6 +12,14 @@ const NomineeSchema = new Schema({
         type: String,
         default: "https://static7.depositphotos.com/1226177/727/v/450/depositphotos_7279742-stock-illustration-open-and-closed-movie-clapper.jpg"
     },
+    movie: {
+        type: String,
+        required: 'Kindly enter the name of the belonged movie'
+    },
+    votes: {
+        type: Number,
+        default: 0,
+    },
     Created_date: {
         type: Date,
         default: Date.now

@@ -6,15 +6,15 @@ exports.createAwardEvent = function (req, res) {
     let newAward = new Award(req.body);
     newAward.save(function (err, award) {
         if (err)
-            res.send(err);
-        res.json(award);
+            return res.status(400).send({"description": "Invalid data or server may be down.", err})
+        return res.status(201).json(award);
     });
 };
 
 exports.listAllAwards = function (req, res) {
     Award.find({}, function (err, awards) {
         if (err)
-            res.send(err);
+            return res.status(500).send(err);
         res.json(awards);
     });
 };
@@ -22,7 +22,9 @@ exports.listAllAwards = function (req, res) {
 exports.getAward = function (req, res) {
     Award.findById(req.params.awardId, function (err, award) {
         if (err)
-            res.send(err);
-        res.json(award);
+            return res.status(400).send({"description": "Invalid resource identifier or server may be down.", err})
+        else if (!award)
+            return res.status(404).send();
+        return res.json(award).send();
     });
 };

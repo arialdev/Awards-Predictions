@@ -1,20 +1,17 @@
 'use strict';
 const mongoose = require('mongoose');
-const Category = mongoose.model('CategoryEvents');
+const Category = mongoose.model('Categories');
 const Award = mongoose.model('AwardEvents');
 
-exports.createCategory = function (req, res) {
+// TODO: control de errores
+exports.createCategory = async function (req, res) {
     let newCategory = new Category(req.body);
-    Award.findById(req.params.awardId, function (err, award) {
+    newCategory.save(async function (err, category) {
         if (err)
-            res.send(err);
-        res.categories.push(newCategory)
-        res.save(function (err, category) {
-            if (err)
-                res.send(err);
-            res.json(category);
-        });
-    })
+            return res.status(400).send({"description": "Invalid data or server may be down.", err})
+        await Award.findByIdAndUpdate(req.params.awardId, {$push: {categories: newCategory}}, {new: true})
+        return res.status(201).json(category);
+    });
 };
 
 exports.listAllCategories = function (req, res) {

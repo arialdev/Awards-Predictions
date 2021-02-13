@@ -1,3 +1,7 @@
+var userRoutes = require('./api/routes/userRoutes');
+var awardEventRoutes = require('./api/routes/awardRoutes');
+var categoryRoutes = require('./api/routes/categoryRoutes');
+
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000,
@@ -16,13 +20,13 @@ mongoose.Promise = global.Promise;
 // mongoose.connect(`mongodb://${DBUri}:${DBPort}/${DBSchema}`);
 mongoose.connect('mongodb://localhost:27017/AwardsPredictions');
 
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-
-var routes = require('./api/routes/userRoutes'); //importing route
-routes(app); //register the route
+// registering the routes
+userRoutes(app);
+awardEventRoutes(app);
+categoryRoutes(app);
 
 
 app.listen(port);
