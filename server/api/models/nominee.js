@@ -16,6 +16,16 @@ const NomineeSchema = new Schema({
         type: String,
         required: 'Kindly enter the name of the belonged movie'
     },
+    category: {
+        type: Schema.Types.ObjectId,
+        ref: 'Category',
+        required: 'To which category belongs this nominee?'
+    },
+    award: {
+        type: Schema.Types.ObjectId,
+        ref: 'AwardEvents',
+        required: 'To which Award Event belongs this nominee?'
+    },
     votes: {
         type: Number,
         default: 0,

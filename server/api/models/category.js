@@ -15,10 +15,12 @@ const CategorySchema = new Schema({
     winner: {
         type: Schema.Types.ObjectId,
         ref: 'Nominees',
+        default: null,
     },
-    award:{
+    award: {
         type: Schema.Types.ObjectId,
         ref: 'AwardEvents',
+        required: 'To which Award Event belongs this category?'
     },
     Created_date: {
         type: Date,

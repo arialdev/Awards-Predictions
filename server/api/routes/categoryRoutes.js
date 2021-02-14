@@ -8,5 +8,9 @@ module.exports = function (app) {
         .put(categories.createCategory);
 
     app.route('/awardsEvents/:awardId/categories/:categoryId')
-        .get(categories.getCategory)
+        .get(categories.getCategory);
+
+    app.route('/awardsEvents/:awardId/categories/:categoryId/nominee/:nomineeId')
+        .put(categories.setWinner);
+
 };
