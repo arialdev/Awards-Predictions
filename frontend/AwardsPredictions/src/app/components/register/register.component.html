@@ -2,20 +2,22 @@
 
 
 <div class="row justify-content-md-center">
-  <div class="col-8 mb-5">
+  <div class="col col-md-8 mb-5">
     <h1 id="register-title">PLEASE ENTER YOUR NAME</h1>
   </div>
 </div>
 <div class="row justify-content-md-center">
-  <div class="col-8">
-    <form (ngSubmit)="onUsernameSubmit()">
+  <div class="col col-sm-9 col-md-7 col-lg-5 col-xl-3">
+    <form>
       <div class="mb-3">
         <label for="usernameInput" class="form-label"></label>
         <input id="usernameInput" class="form-control" type="text" [(ngModel)]="username"
                [ngModelOptions]="{standalone: true}" aria-describedby="legalHelp">
         <div id="legalHelp" class="form-text">We won't share any of this data</div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <a class="btn btn-lg mt-3" (click)="onUsernameSubmit()">
+        <span>Start</span>
+      </a>
     </form>
   </div>
 </div>

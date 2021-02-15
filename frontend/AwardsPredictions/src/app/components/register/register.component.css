@@ -37,3 +37,90 @@ h1 {
   color: white;
   font-family: 'caviar-dreams', serif;
 }
+
+#legalHelp {
+  color: #bababa;
+}
+
+#usernameInput {
+  font-family: 'caviar-dreams', serif;
+  font-style: italic;
+  font-weight: bold;
+  border: 2px solid #e7c683;
+  text-align: center;
+}
+
+/*#submitUsername {*/
+/*  font-family: 'caviar-dreams', serif;*/
+/*  font-weight: bold;*/
+/*  font-style: italic;*/
+/*  !*border: 2px solid #e7c683;*!*/
+/*  width: 5rem;*/
+/*}*/
+
+
+.btn {
+  color: #fff;
+  font-family: 'caviar-dreams', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 35px;
+  border: 2px solid #00d8d6;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  animation: swoosh 0.4s ease-out 0.2s;
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  background-color: #00d8d6;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  transition: all 0.4s ease-out 0.1s;
+}
+
+.btn:after {
+  opacity: 0;
+  transform: scale(0.9, 0.7);
+  left: 0;
+  transition: all 0.3s ease-out 0s;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+.btn:hover:after {
+  opacity: 0.3;
+  transform: scale(1);
+}
+
+@keyframes swoosh {
+  0%, 100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 214, 216, 0.3);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn {
+    margin-bottom: 20px;
+  }
+}
