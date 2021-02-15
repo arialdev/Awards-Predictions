@@ -1,0 +1,39 @@
+.red-snackbar {
+  background-color: red !important;
+  color: white !important;
+}
+
+.mat-snack-bar-container {
+  background-color: red !important;
+  color: white !important;
+}
+
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../../../assets/fonts/caviar_dreams/CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../../../assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../../../assets/fonts/caviar_dreams/CaviarDreams_Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../../../assets/fonts/caviar_dreams/CaviarDreams_BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+  font-family: 'caviar-dreams', serif;
+}

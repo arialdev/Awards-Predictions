@@ -1,6 +1,10 @@
 header {
   text-align: center;
-  height: 8rem ;
+  height: 8rem;
   margin-bottom: 2rem;
+}
+
+#content-container {
+  height: 55vh;
 }
 
