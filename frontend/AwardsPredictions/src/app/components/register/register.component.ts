@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onUsernameSubmit() {
-    if (this.username === undefined) {
+    if (!this.username) {
       this.snackBar.open("The username must not me empty!", null, {
         duration: 5000,
         panelClass: ['red-snackbar', 'snackbar']
