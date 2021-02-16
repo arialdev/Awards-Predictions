@@ -26,6 +26,10 @@ const CategorySchema = new Schema({
         type: Date,
         default: Date.now
     },
+    status: {
+        type: Boolean,
+        default: true,
+    },
 });
 
 module.exports = mongoose.model('Categories', CategorySchema);

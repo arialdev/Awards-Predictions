@@ -11,6 +11,8 @@
   "repository": "https://github.com/Varo412/Awards-Predictions",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.16"
   },

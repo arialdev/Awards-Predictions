@@ -1,0 +1,8 @@
+{
+  "DBuri": "localhost",
+  "DBPort": 27017,
+  "DBSchema": "AwardsPredictions",
+  "create-drop": true,
+  "serverURI": "localhost",
+  "serverPort": 3000
+}

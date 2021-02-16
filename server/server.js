@@ -1,10 +1,14 @@
+var colors = require('colors');
+const config = require('./config.json');
+
 var userRoutes = require('./api/routes/userRoutes');
 var awardEventRoutes = require('./api/routes/awardRoutes');
 var categoryRoutes = require('./api/routes/categoryRoutes');
+const dbInitializer = require('./databaseInitializator');
 
 var express = require('express'),
     app = express(),
-    port = process.env.PORT || 3000,
+    port = process.env.PORT || config.serverPort,
     mongoose = require('mongoose'),
 
     //created models loading here
@@ -12,13 +16,18 @@ var express = require('express'),
     Category = require('./api/models/category'),
     Nominee = require('./api/models/nominee'),
     AwardEvent = require('./api/models/awardEvent'),
-
     bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-// mongoose.connect(`mongodb://${DBUri}:${DBPort}/${DBSchema}`);
-mongoose.connect('mongodb://localhost:27017/AwardsPredictions');
+mongoose.connect(`mongodb://${config.DBuri}:${config.DBPort}/${config.DBSchema}`, {useFindAndModify: false}).then(() => {
+    new Promise(r => setTimeout(r, 500)).then(() => {
+            if (config["create-drop"]) {
+                initializeDatabase().then(() => console.log(`Database initialized: ${config.DBSchema}`));
+            }
+        }
+    )
+});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -30,6 +39,11 @@ categoryRoutes(app);
 
 
 app.listen(port);
+console.log(('AwardsPredictions API server started on: '.bold.brightBlue + port.toString().bold.brightYellow));
 
-
-console.log('AwardsPredictions API server started on: ' + port);
+async function initializeDatabase() {
+    console.log(`Resetting database: ${config.DBSchema}`);
+    await mongoose.connection.db.dropDatabase();
+    console.log(`Database dropped: ${config.DBSchema}`);
+    await dbInitializer.loadData;
+}

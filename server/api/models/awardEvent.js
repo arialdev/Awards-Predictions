@@ -4,11 +4,6 @@ const Schema = mongoose.Schema;
 
 
 const AwardSchema = new Schema({
-    _id: {
-        type: String,
-        required: true,
-        unique: true,
-    },
     name: {
         type: String,
         required: 'Please, enter a valid username',
@@ -30,6 +25,10 @@ const AwardSchema = new Schema({
     Created_date: {
         type: Date,
         default: Date.now
+    },
+    status: {
+        type: Boolean,
+        default: true,
     },
 });
 

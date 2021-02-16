@@ -16,9 +16,12 @@ const NomineeSchema = new Schema({
         type: String,
         required: 'Kindly enter the name of the belonged movie'
     },
+    link: {
+        type: String,
+    },
     category: {
         type: Schema.Types.ObjectId,
-        ref: 'Category',
+        ref: 'Categories',
         required: 'To which category belongs this nominee?'
     },
     award: {
@@ -33,6 +36,10 @@ const NomineeSchema = new Schema({
     Created_date: {
         type: Date,
         default: Date.now
+    },
+    status: {
+        type: Boolean,
+        default: true,
     },
 });
 
