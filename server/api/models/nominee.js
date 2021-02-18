@@ -24,7 +24,7 @@ const NomineeSchema = new Schema({
         ref: 'Categories',
         required: 'To which category belongs this nominee?'
     },
-    award: {
+    awardEvent: {
         type: Schema.Types.ObjectId,
         ref: 'AwardEvents',
         required: 'To which Award Event belongs this nominee?'
@@ -33,7 +33,7 @@ const NomineeSchema = new Schema({
         type: Number,
         default: 0,
     },
-    Created_date: {
+    creationDate: {
         type: Date,
         default: Date.now
     },

@@ -3,11 +3,11 @@ module.exports = function (app) {
     const users = require('../controllers/userController');
 
     // user Routes
-    app.route('/users')
+    app.route('/awardsPredictions/users')
         .get(users.listAllUsers)
         .post(users.createUser);
 
 
-    app.route('/users/:userId')
+    app.route('/awardsPredictions/users/:userId')
         .get(users.getUser)
 };

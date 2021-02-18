@@ -28,7 +28,7 @@ const UserSchema = new Schema({
         }
     }],
 
-    Created_date: {
+    creationDate: {
         type: Date,
         default: Date.now
     },

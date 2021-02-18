@@ -1,14 +1,15 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {RegisterComponent} from './components/register/register.component';
 import {VotingComponent} from './components/voting/voting.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatInputModule} from "@angular/material/input";
-import {FormsModule} from "@angular/forms";
-import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,

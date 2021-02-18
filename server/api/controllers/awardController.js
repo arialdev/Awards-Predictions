@@ -11,6 +11,20 @@ exports.createAwardEvent = function (req, res) {
     });
 };
 
+exports.findAwardEventByNameAndEdition = function (req, res) {
+
+    const name = req.params.awardEventName;
+    const edition = req.params.awardEdition;
+
+    Award.findOne({name, edition}, function (err, award) {
+        if (err)
+            return res.status(400).send(err);
+        else if (!award)
+            return res.status(404).send();
+        res.json(award);
+    });
+};
+
 exports.listAllAwards = function (req, res) {
     Award.find({}, function (err, awards) {
         if (err)

@@ -3,7 +3,7 @@ module.exports = function (app) {
     const categories = require('../controllers/categoryController');
 
     // user Routes
-    app.route('/awardsEvents/:awardId/categories')
+    app.route('/awardsPredictions/awardsEvents/:awardId/categories')
         .get(categories.listAllCategories)
         .put(categories.createCategory);
 

@@ -22,7 +22,7 @@ const AwardSchema = new Schema({
         ref: 'Categories',
     }],
 
-    Created_date: {
+    creationDate: {
         type: Date,
         default: Date.now
     },

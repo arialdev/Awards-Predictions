@@ -5,9 +5,10 @@ import {VotingComponent} from './components/voting/voting.component';
 
 const routes: Routes = [
   {path: 'register', component: RegisterComponent},
-  {path: 'home', component: RegisterComponent},
+  // {path: 'home', component: RegisterComponent},
   {path: 'voting/:eventId', component: VotingComponent},
   {path: '', redirectTo: '/register', pathMatch: 'full'},
+  {path: '**', redirectTo: '/register', pathMatch: 'full'}
 ];
 
 @NgModule({
