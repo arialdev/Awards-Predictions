@@ -15,21 +15,18 @@ export class AwardEventService {
   constructor(private http: HttpClient) {
   }
 
-  // registerUser(username: string): Observable<User> {
-  //   const headers = new HttpHeaders()
-  //     .set('content-type', 'application/json')
-  //     .set('Access-Control-Allow-Origin', '*');
-  //
-  //   const body = new URLSearchParams();
-  //   body.set('name', username);
-  //   return this.http.post<User>(`${(this.serverURL)}`, {name: username}, {headers});
-  // }
-
   getAwardEventByNameAndEdition(awardEventName: string, awardEdition: number): Observable<AwardEvent> {
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*');
 
     return this.http.get<AwardEvent>(`${this.serverURL}/${awardEventName}/${awardEdition}`, {headers});
+  }
+
+  getAwardEventById(id: string): Observable<AwardEvent> {
+    const headers = new HttpHeaders()
+      .set('content-type', 'application/json')
+      .set('Access-Control-Allow-Origin', '*');
+    return this.http.get<AwardEvent>(`${this.serverURL}/${id}`, {headers});
   }
 }

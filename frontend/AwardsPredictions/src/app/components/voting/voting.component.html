@@ -1,3 +1,23 @@
-<p>voting works!</p>
+<div *ngFor="let category of this.awardEvent.categories">
+  <h1>{{category.name}}</h1>
+  <div class="row-5" *ngFor="let nominee of category.nominees">
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{nominee.pic}}" alt="{{nominee.name}} picture">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{nominee.name}}</h5>
+              <p class="card-text" *ngIf="nominee.name!==nominee.movie">{{nominee.movie}}</p>
+              <!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 

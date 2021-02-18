@@ -56,6 +56,7 @@ async function initializeDatabase() {
         'name': "Golden Globes",
         'year': 2021,
         'edition': 78,
+        'pic': 'https://www.goldenglobes.com/images/default_share_image.png',
     }];
     let promises = [];
     await awards.forEach((award) => {

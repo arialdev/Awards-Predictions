@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'roboto'; /*a name to be used later*/
+  src: url('../../../assets/fonts/roboto/roboto-Light.ttf');
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  font-family: Abhayalibre, Georgia, serif;
+}

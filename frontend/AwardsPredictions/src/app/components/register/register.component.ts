@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
     // this remains until AwardEventSelection component is created
     this.awardEventService.getAwardEventByNameAndEdition('Golden Globes', 78).subscribe(
       (award: AwardEvent) => {
-        this.redirectRoute = `/voting/${award.id}`;
+        this.redirectRoute = `/voting/${award._id}`;
       },
       (err) => {
         // redirigir a otro lado

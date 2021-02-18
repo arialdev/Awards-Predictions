@@ -4,11 +4,9 @@ const User = mongoose.model('Users');
 
 exports.createUser = function (req, res) {
     let newUser = new User(req.body);
-    console.log(req.body.name)
     newUser.save(function (err, user) {
         if (err)
             return res.status(400).send({"description": "Invalid data or server may be down.", err})
-        console.log(user)
         return res.status(201).send(user);
     });
 };

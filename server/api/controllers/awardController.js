@@ -33,12 +33,16 @@ exports.listAllAwards = function (req, res) {
     });
 };
 
-exports.getAward = function (req, res) {
-    Award.findById(req.params.awardId, function (err, award) {
-        if (err)
-            return res.status(400).send({"description": "Invalid resource identifier or server may be down.", err})
-        else if (!award)
-            return res.status(404).send();
-        return res.json(award).send();
-    });
+exports.findAwardById = async function (req, res) {
+    try {
+        const award = await Award.findById(req.params.awardId).populate({
+            path: 'categories',
+            populate: 'nominees'
+        });
+        console.log(award);
+        if (!award) return res.status(404).json({message: 'Award Event not found'});
+        return res.status(200).json(award);
+    } catch (error) {
+        return res.status(500).send();
+    }
 };

@@ -16,7 +16,10 @@ const AwardSchema = new Schema({
         type: Number,
         default: 1,
     },
-
+    pic: {
+        type: String,
+        default: 'https://static7.depositphotos.com/1226177/727/v/450/depositphotos_7279742-stock-illustration-open-and-closed-movie-clapper.jpg',
+    },
     categories: [{
         type: Schema.Types.ObjectId,
         ref: 'Categories',

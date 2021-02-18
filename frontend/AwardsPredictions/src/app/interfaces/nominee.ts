@@ -2,7 +2,7 @@ import {Category} from './category';
 import {AwardEvent} from './award-event';
 
 export interface Nominee {
-  id: string;
+  _id: string;
   name: string;
   pic: string;
   movie: string;

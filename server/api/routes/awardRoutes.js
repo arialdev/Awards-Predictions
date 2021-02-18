@@ -7,8 +7,8 @@ module.exports = function (app) {
         .get(awards.listAllAwards)
         .post(awards.createAwardEvent);
 
-    app.route('/awardsEvents/:awardId')
-        .get(awards.getAward);
+    app.route('/awardsPredictions/awardsEvents/:awardId')
+        .get(awards.findAwardById);
 
     app.route('/awardsPredictions/awardsEvents/:awardEventName/:awardEdition')
         .get(awards.findAwardEventByNameAndEdition)
