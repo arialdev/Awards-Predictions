@@ -11,8 +11,8 @@
     <form>
       <div class="mb-3">
         <label for="usernameInput" class="form-label"></label>
-        <input id="usernameInput" class="form-control" type="text" [(ngModel)]="username"
-               [ngModelOptions]="{standalone: true}" aria-describedby="legalHelp">
+        <input id="usernameInput" class="form-control" [ngClass]="{'animatedInput': this.failedInput}" type="text"
+               [(ngModel)]="username" [ngModelOptions]="{standalone: true}" aria-describedby="legalHelp">
         <div id="legalHelp" class="form-text">We won't share any of this data</div>
       </div>
       <a class="btn btn-lg mt-3" (click)="onUsernameSubmit()">

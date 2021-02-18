@@ -1,13 +1,3 @@
-.red-snackbar {
-  background-color: red !important;
-  color: white !important;
-}
-
-.mat-snack-bar-container {
-  background-color: red !important;
-  color: white !important;
-}
-
 @font-face {
   font-family: 'caviar-dreams'; /*a name to be used later*/
   src: url('../../../assets/fonts/caviar_dreams/CaviarDreams.ttf');
@@ -40,6 +30,16 @@ h1 {
 
 #legalHelp {
   color: #bababa;
+}
+
+@keyframes failAnimationColor {
+  from {background-color: #ff4747;}
+  to {background-color: white;}
+}
+
+.animatedInput{
+  animation-name: failAnimationColor;
+  animation-duration: 4s;
 }
 
 #usernameInput {

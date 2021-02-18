@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import {Component, DoCheck, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {UserService} from '../../services/user.service';
 import {AwardEventService} from '../../services/award-event.service';
@@ -12,14 +11,15 @@ import {AwardEvent} from '../../interfaces/award-event';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
   public username: string;
   private redirectRoute: string = null;
+  failedInput = false;
 
   constructor(
-    private userService: UserService, private awardEventService: AwardEventService, private snackBar: MatSnackBar,
+    private userService: UserService, private awardEventService: AwardEventService,
     private router: Router) {
   }
+
 
   ngOnInit(): void {
     // this remains until AwardEventSelection component is created
@@ -37,10 +37,10 @@ export class RegisterComponent implements OnInit {
 
   onUsernameSubmit(): void {
     if (!this.username) {
-      this.snackBar.open('The username must not me empty!', null, {
-        duration: 5000,
-        panelClass: ['red-snackbar', 'snackbar']
-      });
+      this.failedInput = true;
+      let input = document.querySelector('input') as HTMLElement;
+      input.classList.add()
+
     } else {
       this.userService.registerUser(this.username).subscribe(
         (user: User) => {

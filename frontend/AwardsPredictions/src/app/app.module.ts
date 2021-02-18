@@ -7,9 +7,7 @@ import {AppComponent} from './app.component';
 import {RegisterComponent} from './components/register/register.component';
 import {VotingComponent} from './components/voting/voting.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -22,9 +20,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule,
     FormsModule,
-    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
