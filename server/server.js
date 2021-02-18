@@ -29,7 +29,7 @@ mongoose.connect(`mongodb://${config.DBuri}:${config.DBPort}/${config.DBSchema}`
             initializeDatabase().then(() => console.log(`Database initialized: ${config.DBSchema}`));
         }
     },
-    (err) => console.log(err.white.bold.bgRed)
+    (err) => console.log(err)
 );
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
