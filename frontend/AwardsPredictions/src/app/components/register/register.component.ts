@@ -4,12 +4,33 @@ import {UserService} from '../../services/user.service';
 import {AwardEventService} from '../../services/award-event.service';
 import {User} from '../../interfaces/user';
 import {AwardEvent} from '../../interfaces/award-event';
+import bootstrap from 'node_modules/bootstrap/dist/js/bootstrap.bundle.js';
+
+import {trigger, state, style, animate, transition} from '@angular/animations';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
+  animations: [
+    trigger('invalidName', [
+      state('open', style({
+        backgroundColor: '#ff4747',
+
+      })),
+      state('closed', style({
+        backgroundColor: 'white',
+      })),
+      transition('open => closed', [
+        animate('3s')
+      ]),
+      transition('closed => open', [
+        animate('0.5s')
+      ]),
+    ]),
+  ],
 })
+
 export class RegisterComponent implements OnInit {
   public username: string;
   private redirectRoute: string = null;
@@ -20,6 +41,15 @@ export class RegisterComponent implements OnInit {
     private router: Router) {
   }
 
+  ngAfterViewInit() {
+    // const button = <HTMLElement>document.querySelector('#submitButton');
+    // if (button)
+    //   button.addEventListener('touchend', () => {
+    //     console.log('hola');
+    //     let input = <HTMLElement>document.querySelector('input');
+    //     input.focus();
+    //   });
+  }
 
   ngOnInit(): void {
     // this remains until AwardEventSelection component is created
@@ -35,12 +65,21 @@ export class RegisterComponent implements OnInit {
     );
   }
 
+  removeInvalidation() {
+    this.failedInput = false;
+    let button = document.querySelector('#submitButton') as HTMLElement;
+    // button.
+    // let button = document.activeElement as HTMLElement;
+    button.blur();
+  }
+
   onUsernameSubmit(): void {
     if (!this.username) {
-      this.failedInput = true;
-      let input = document.querySelector('input') as HTMLElement;
-      input.classList.add()
-
+      if (!this.failedInput)
+        this.failedInput = true;
+      const tooltip = new bootstrap.Tooltip(document.querySelector('input'));
+      tooltip.show();
+      setTimeout(() => tooltip.hide(), 3000);
     } else {
       this.userService.registerUser(this.username).subscribe(
         (user: User) => {

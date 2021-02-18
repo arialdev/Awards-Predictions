@@ -28,20 +28,6 @@ h1 {
   font-family: 'caviar-dreams', serif;
 }
 
-#legalHelp {
-  color: #bababa;
-}
-
-@keyframes failAnimationColor {
-  from {background-color: #ff4747;}
-  to {background-color: white;}
-}
-
-.animatedInput{
-  animation-name: failAnimationColor;
-  animation-duration: 4s;
-}
-
 #usernameInput {
   font-family: 'caviar-dreams', serif;
   font-style: italic;
