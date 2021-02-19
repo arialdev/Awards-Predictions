@@ -31,16 +31,17 @@ h1 {
   font-weight: bold;
 }
 
-/*.card-group {*/
-/*  flex-direction: column;*/
-/*  overflow: scroll;*/
-/*  display: -moz-inline-box;*/
-/*  width: 100%;*/
-/*}*/
+#fixed-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+  fill: white;
+  cursor: pointer;
+}
 
-/*.aux-container {*/
-/*  width: 40%;*/
-/*  padding: 0 12px;*/
-/*}*/
-
-
+#fixed-button svg {
+  fill: white;
+  /*background-color: yellow;*/
+}
