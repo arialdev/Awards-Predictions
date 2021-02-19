@@ -11,6 +11,7 @@ import {AwardEvent} from '../../interfaces/award-event';
 export class VotingComponent implements OnInit {
 
   awardEvent: AwardEvent = null;
+  votes: string [];
 
   constructor(private awardEventService: AwardEventService, public router: Router) {
 
@@ -21,6 +22,7 @@ export class VotingComponent implements OnInit {
     this.awardEventService.getAwardEventByNameAndEdition(awardEventParams[0], parseInt(awardEventParams[1], 10)).subscribe(
       (award: AwardEvent) => {
         this.awardEvent = award;
+        this.votes = new Array<string>(award.categories.length);
       },
       (error) => {
         console.error(error);
@@ -28,5 +30,18 @@ export class VotingComponent implements OnInit {
     );
     await new Promise(r => setTimeout(r, 2000));
   }
+
+  onNomineeSelected(categoryIndex: number, nomineeIndex: string): void {
+    this.votes[categoryIndex] = nomineeIndex;
+  }
+
+  async submitVotes(): Promise<void> {
+    console.log(this.votes);
+
+    this.votes.forEach(vote => {
+
+    });
+  }
+
 
 }

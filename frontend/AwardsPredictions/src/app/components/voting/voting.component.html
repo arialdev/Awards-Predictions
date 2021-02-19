@@ -1,12 +1,12 @@
 <h3 id="voting-info-title" class="mb-5">Select a nominee per category by clicking on it</h3>
 
 <div class="row category-container" [class.mt-5]="!isFirst" [class.mb-5]="isLast"
-     *ngFor="let category of this.awardEvent.categories; first as isFirst;last as isLast">
+     *ngFor="let category of this.awardEvent.categories; index as i;first as isFirst;last as isLast">
   <h1 class="display-6">{{category.name}}</h1>
 
   <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-3">
-    <div class="col" *ngFor="let nominee of category.nominees">
-      <div class="card h-100">
+    <div class="col" *ngFor="let nominee of category.nominees; index as j">
+      <div class="card h-100" (click)="onNomineeSelected(i,j)">
         <img
           src="{{nominee.pic}}"
           class="card-img-top" alt="{{nominee.name}} picture">
@@ -28,7 +28,7 @@
 <!--</a>-->
 
 
-<button id="submit-votes-button" class="btn-lg btn-success mb-5">Submit votes</button>
+<button id="submit-votes-button" class="btn-lg btn-success mb-5" (click)="submitVotes()">Submit votes</button>
 
 
 

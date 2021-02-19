@@ -45,3 +45,8 @@ h1 {
   fill: white;
   /*background-color: yellow;*/
 }
+
+.card:hover, .card.selected {
+  border: 6px groove gold;
+  cursor: pointer;
+}
