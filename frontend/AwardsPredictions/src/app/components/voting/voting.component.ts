@@ -18,10 +18,8 @@ export class VotingComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     const awardEventParams = decodeURI(this.router.url).split('/')[2].split('&');
-    console.log(awardEventParams);
     this.awardEventService.getAwardEventByNameAndEdition(awardEventParams[0], parseInt(awardEventParams[1], 10)).subscribe(
       (award: AwardEvent) => {
-        console.log(award.categories);
         this.awardEvent = award;
       },
       (error) => {

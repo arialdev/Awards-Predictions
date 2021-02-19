@@ -68,8 +68,6 @@ export class RegisterComponent implements OnInit {
   removeInvalidation() {
     this.failedInput = false;
     let button = document.querySelector('#submitButton') as HTMLElement;
-    // button.
-    // let button = document.activeElement as HTMLElement;
     button.blur();
   }
 

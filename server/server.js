@@ -5,18 +5,19 @@ var userRoutes = require('./api/routes/userRoutes');
 var awardEventRoutes = require('./api/routes/awardRoutes');
 var categoryRoutes = require('./api/routes/categoryRoutes');
 
-const cors = require('cors');
-var express = require('express'),
-    app = express(),
-    port = process.env.PORT || config.serverPort,
-    mongoose = require('mongoose'),
 
-    //created models loading here
-    User = require('./api/models/user'),
-    Category = require('./api/models/category'),
-    Nominee = require('./api/models/nominee'),
-    AwardEvent = require('./api/models/awardEvent'),
-    bodyParser = require('body-parser');
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const port = process.env.PORT || config.serverPort;
+const mongoose = require('mongoose');
+
+//created models loading here
+User = require('./api/models/user');
+Category = require('./api/models/category');
+Nominee = require('./api/models/nominee');
+AwardEvent = require('./api/models/awardEvent');
+bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -66,10 +67,6 @@ async function initializeDatabase() {
 
     // Initializing categories
     const categories = [
-        {
-            'name': "Best Picture Drama",
-            'awardEvent': GOLDEN_GLOBES._id,
-        },
         {
             'name': "Best Picture Drama",
             'awardEvent': GOLDEN_GLOBES._id,
@@ -204,7 +201,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Nomadland',
-            'pic': 'https://www.goldenglobes.com/sites/default/files/styles/portrait_medium/public/2021_movies/Father%2C%20The.jpg?format=pjpg&auto=webp&optimize=high',
+            'pic': 'https://www.goldenglobes.com/sites/default/files/styles/portrait_medium/public/2021_movies/Nomadland.jpg?format=pjpg&auto=webp&optimize=high',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/title/tt9620292',
             'category': GOLDEN_GLOBES.categories[0]._id,

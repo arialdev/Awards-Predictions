@@ -4,7 +4,43 @@
 }
 
 h1 {
-  font-size: 30px;
   color: white;
-  font-family: Abhayalibre, Georgia, serif;
+  text-align: start;
 }
+
+#voting-info-title {
+  font-family: 'caviar-dreams', serif;
+  font-weight: bold;
+  color: gold;
+}
+
+.category-container {
+  border: 1px solid #ffffff36;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../../../assets/fonts/caviar_dreams/CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../../../assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf');
+  font-weight: bold;
+}
+
+/*.card-group {*/
+/*  flex-direction: column;*/
+/*  overflow: scroll;*/
+/*  display: -moz-inline-box;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.aux-container {*/
+/*  width: 40%;*/
+/*  padding: 0 12px;*/
+/*}*/
+
+
