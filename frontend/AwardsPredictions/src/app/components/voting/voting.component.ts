@@ -11,7 +11,7 @@ import {AwardEvent} from '../../interfaces/award-event';
 export class VotingComponent implements OnInit {
 
   awardEvent: AwardEvent = null;
-  votes: string [];
+  votes: number [];
 
   constructor(private awardEventService: AwardEventService, public router: Router) {
 
@@ -22,7 +22,7 @@ export class VotingComponent implements OnInit {
     this.awardEventService.getAwardEventByNameAndEdition(awardEventParams[0], parseInt(awardEventParams[1], 10)).subscribe(
       (award: AwardEvent) => {
         this.awardEvent = award;
-        this.votes = new Array<string>(award.categories.length);
+        this.votes = new Array<number>(award.categories.length);
       },
       (error) => {
         console.error(error);
@@ -31,7 +31,7 @@ export class VotingComponent implements OnInit {
     await new Promise(r => setTimeout(r, 2000));
   }
 
-  onNomineeSelected(categoryIndex: number, nomineeIndex: string): void {
+  onNomineeSelected(categoryIndex: number, nomineeIndex: number): void {
     this.votes[categoryIndex] = nomineeIndex;
   }
 
