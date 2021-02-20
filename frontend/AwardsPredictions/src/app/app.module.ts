@@ -8,12 +8,14 @@ import {RegisterComponent} from './components/register/register.component';
 import {VotingComponent} from './components/voting/voting.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
+import { VotesResultComponent } from './components/votes-result/votes-result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    VotingComponent
+    VotingComponent,
+    VotesResultComponent
   ],
   imports: [
     BrowserModule,

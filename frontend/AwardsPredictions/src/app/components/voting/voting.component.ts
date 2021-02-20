@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {AwardEventService} from '../../services/award-event.service';
 import {VoteService} from '../../services/vote.service';
+import {UserService} from '../../services/user.service';
 import {AwardEvent} from '../../interfaces/award-event';
 
 @Component({
@@ -14,11 +15,18 @@ export class VotingComponent implements OnInit {
   awardEvent: AwardEvent;
   votes: number [];
 
-  constructor(private awardEventService: AwardEventService, private voteService: VoteService, public router: Router) {
-
+  constructor(
+    private awardEventService: AwardEventService,
+    private voteService: VoteService,
+    private userService: UserService,
+    public router: Router) {
   }
 
   async ngOnInit(): Promise<void> {
+    // if (!this.userService.user) {
+    //   await this.router.navigate(['voting']);
+    // }
+
     const awardEventParams = decodeURI(this.router.url).split('/')[2].split('&');
     this.awardEventService.getAwardEventByNameAndEdition(awardEventParams[0], parseInt(awardEventParams[1], 10)).subscribe(
       (award: AwardEvent) => {
