@@ -15,9 +15,10 @@ h1 {
 }
 
 .category-container {
-  border: 1px solid #ffffff36;
-  border-radius: 1.5rem;
+  /*border: 1px solid #ffffff36;*/
+  /*border-radius: 1.5rem;*/
   padding: 1rem;
+  max-width: 70rem;
 }
 
 @font-face {

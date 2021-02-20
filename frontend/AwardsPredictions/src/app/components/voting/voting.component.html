@@ -1,6 +1,6 @@
 <h3 id="voting-info-title" class="mb-5">Select a nominee per category by clicking on it</h3>
 
-<div class="row category-container" [class.mt-5]="!isFirst" [class.mb-5]="isLast"
+<div class="row category-container mx-auto" [class.mt-5]="!isFirst" [class.mb-5]="isLast"
      *ngFor="let category of this.awardEvent.categories; index as i;first as isFirst;last as isLast">
   <h1 class="display-6">{{category.name}}</h1>
 
