@@ -4,6 +4,8 @@ const config = require('./config.json');
 var userRoutes = require('./api/routes/userRoutes');
 var awardEventRoutes = require('./api/routes/awardRoutes');
 var categoryRoutes = require('./api/routes/categoryRoutes');
+// var nomineeRoutes = require('./api/routes/nomineeRoutes');
+var voteRoutes = require('./api/routes/voteRoutes');
 
 
 const express = require('express');
@@ -17,6 +19,7 @@ User = require('./api/models/user');
 Category = require('./api/models/category');
 Nominee = require('./api/models/nominee');
 AwardEvent = require('./api/models/awardEvent');
+Vote = require('./api/models/vote');
 bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
@@ -40,6 +43,7 @@ app.use(bodyParser.json());
 userRoutes(app);
 awardEventRoutes(app);
 categoryRoutes(app);
+voteRoutes(app);
 
 
 app.listen(port);

@@ -14,18 +14,8 @@ const UserSchema = new Schema({
     },
 
     votes: [{
-        awardEvent: {
-            type: Schema.Types.ObjectId,
-            ref: 'AwardEvents',
-        },
-        category: {
-            type: Schema.Types.ObjectId,
-            ref: 'Categories',
-        },
-        voted: {
-            type: Schema.Types.ObjectId,
-            ref: 'Nominees',
-        }
+        type: Schema.Types.ObjectId,
+        ref: 'Votes',
     }],
 
     creationDate: {

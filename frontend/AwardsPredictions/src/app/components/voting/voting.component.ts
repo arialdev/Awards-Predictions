@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {AwardEventService} from '../../services/award-event.service';
+import {VoteService} from '../../services/vote.service';
 import {AwardEvent} from '../../interfaces/award-event';
 
 @Component({
@@ -10,10 +11,10 @@ import {AwardEvent} from '../../interfaces/award-event';
 })
 export class VotingComponent implements OnInit {
 
-  awardEvent: AwardEvent = null;
+  awardEvent: AwardEvent;
   votes: number [];
 
-  constructor(private awardEventService: AwardEventService, public router: Router) {
+  constructor(private awardEventService: AwardEventService, private voteService: VoteService, public router: Router) {
 
   }
 
@@ -36,12 +37,21 @@ export class VotingComponent implements OnInit {
   }
 
   async submitVotes(): Promise<void> {
-    console.log(this.votes);
-
-    this.votes.forEach(vote => {
-
+    const nominees = [];
+    this.votes.forEach((voteIndex, catIndex) => {
+      const vote = {
+        category: this.awardEvent.categories[catIndex]._id,
+        voted: this.awardEvent.categories[catIndex].nominees[voteIndex]._id
+      };
+      nominees.push(vote);
     });
-  }
 
+    this.voteService.sendVotes(this.awardEvent._id, nominees).subscribe(
+      (res) => {
+        this.router.navigate(['/']);
+      },
+      (err) => console.error(err)
+    );
+  }
 
 }

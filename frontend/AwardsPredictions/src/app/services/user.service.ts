@@ -28,9 +28,8 @@ export class UserService {
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*');
-
-    const body = new URLSearchParams();
-    body.set('name', username);
     return this.http.post<User>(`${(this.serverURL)}`, {name: username}, {headers});
   }
+
+
 }
