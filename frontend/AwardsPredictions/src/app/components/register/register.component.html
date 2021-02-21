@@ -17,7 +17,7 @@
                data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a valid username"
                (keydown)="keyDownFunction($event)">
       </div>
-      <a id="submitButton" class="btn btn-lg mt-3" >
+      <a id="submitButton" class="btn btn-lg mt-3" (click)="onUsernameSubmit()">
         <span>Start</span>
       </a>
     </form>

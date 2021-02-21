@@ -41,16 +41,6 @@ export class RegisterComponent implements OnInit {
     private router: Router) {
   }
 
-  ngAfterViewInit() {
-    // const button = <HTMLElement>document.querySelector('#submitButton');
-    // if (button)
-    //   button.addEventListener('touchend', () => {
-    //     console.log('hola');
-    //     let input = <HTMLElement>document.querySelector('input');
-    //     input.focus();
-    //   });
-  }
-
   ngOnInit(): void {
     // this remains until AwardEventSelection component is created
     this.awardEventService.getAwardEventByNameAndEdition('Golden Globes', 78).subscribe(
@@ -65,16 +55,11 @@ export class RegisterComponent implements OnInit {
     );
   }
 
-  removeInvalidation() {
-    this.failedInput = false;
-    let button = document.querySelector('#submitButton') as HTMLElement;
-    button.blur();
-  }
-
   onUsernameSubmit(): void {
     if (!this.username) {
-      if (!this.failedInput)
+      if (!this.failedInput) {
         this.failedInput = true;
+      }
       const tooltip = new bootstrap.Tooltip(document.querySelector('input'));
       tooltip.show();
       setTimeout(() => tooltip.hide(), 3000);

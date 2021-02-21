@@ -76,7 +76,7 @@ export class VotingComponent implements OnInit {
 
         this.voteService.votes = votes;
         console.log(this.voteService.votes);
-        // this.router.navigate(['/']);
+        this.router.navigate(['/']);
       },
       (err) => console.error(err)
     );
