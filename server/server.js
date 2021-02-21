@@ -92,7 +92,7 @@ async function initializeDatabase() {
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Actress - Motion Picture – Musical/Comedy",
+            'name': "Best Actress - Motion Picture - Musical/Comedy",
             'awardEvent': GOLDEN_GLOBES._id
         },
         {
@@ -116,7 +116,7 @@ async function initializeDatabase() {
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Picture – Animated",
+            'name': "Best Picture - Animated",
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
@@ -152,23 +152,23 @@ async function initializeDatabase() {
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Television Actress – Drama Series",
+            'name': "Best Television Actress - Drama Series",
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Television Actor – Drama Series",
+            'name': "Best Television Actor - Drama Series",
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Television Actress – Musical/Comedy Series",
+            'name': "Best Television Actress - Musical/Comedy Series",
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Television Actor – Musical/Comedy Series",
+            'name': "Best Television Actor - Musical/Comedy Series",
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {
-            'name': "Best Supporting Actress – Television",
+            'name': "Best Supporting Actress - Television",
             'awardEvent': GOLDEN_GLOBES._id,
         },
         {

@@ -70,25 +70,102 @@ exports.renderImage = async function (req, res) {
 
     setTimeout(function () {
         return res.sendFile(`${options.root}/assets/rendered_pictures/${username}.png`);
-    }, 5000)
+    }, 3000)
 }
 
 async function renderer(data, username) {
-    console.log("Preparing rendering")
+    console.log("Setting up configuration");
+    const renderTitle = `${username}\'s ${data[0].awardEvent.name} ${data[0].awardEvent.edition}\'s prediction`;
+    const distanceX = 435;
+    const distanceY = 210;
+    const titleRelPicX = 0;
+    const titleRelPicY = 0;
+    const descRelPicX = 0;
+    const descRelPicY = 0;
+    const maxCardTextWidth = 190;
+    // const marginLeft = 62;
+
+    const MAX_ROW = 5;
+    const MAX_COL = 5;
+    let matrix = new Array(MAX_ROW);
+    for (let i = 0; i < matrix.length; i++) {
+        matrix[i] = new Array(MAX_COL);
+    }
+    let c = 0;
+    for (let i = 0; i < MAX_ROW; i++) {
+        for (let j = 0; j < MAX_COL; j++) {
+            matrix[i][j] = data[c++]
+        }
+    }
+
+    console.log("Preparing rendering...");
     try {
         let pic = await Jimp.read(appRoot + pictureRoute);
-        console.log("Template loaded")
-        let font = await Jimp.loadFont(Jimp.FONT_SANS_64_WHITE)
+        if (pic) console.log("Template loaded");
+        else {
+            console.err("Error at loading template");
+            return;
+        }
 
-        await pic.print(font, 200, 30,
+        let fontTitle = await Jimp.loadFont(Jimp.FONT_SANS_64_WHITE);
+        let fontCategory = await Jimp.loadFont(Jimp.FONT_SANS_16_WHITE);
+        let fontName = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK);
+        let fontDesc = await Jimp.loadFont(Jimp.FONT_SANS_16_BLACK);
+        if (fontName) console.log("Fonts loaded");
+        else {
+            console.err("Error at loading font:", Jimp.FONT_SANS_64_WHITE)
+            return;
+        }
+
+        console.log("Embedding items...")
+        for (let c = 0; c < MAX_COL; c++) {
+            for (let r = 0; r < MAX_ROW; r++) {
+
+                if (matrix[c][r]) {
+                    //embedding thumbnail
+                    const picX = distanceX * r + 62;
+                    const picY = distanceY * c + 62 + 86;
+
+                    let thumbnail = await Jimp.read({url: matrix[c][r].voted.pic});
+                    if (thumbnail) await thumbnail.scale(0.46)
+                    await pic.composite(thumbnail, picX, picY);
+
+                    //embedding category
+                    await pic.print(fontCategory, picX + 150, picY+5, {
+                        text: matrix[c][r].category,
+                        alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
+                        alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+                    }, maxCardTextWidth)
+
+                    //embedding name
+                    await pic.print(fontName, picX + 150, picY + 50, {
+                        text: matrix[c][r].voted.name,
+                        alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
+                        alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+                    }, maxCardTextWidth)
+
+                    //embedding description
+                    if (matrix[c][r].voted.name !== matrix[c][r].voted.movie)
+                        await pic.print(fontDesc, picX + 150, picY + 141, {
+                            text: matrix[c][r].voted.movie,
+                            alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
+                            alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+                        }, maxCardTextWidth)
+                }
+            }
+        }
+
+        await pic.print(fontTitle, 200, 30,
             {
-                text: `${username}\'s ${data[0].awardEvent.name} ${data[0].awardEvent.edition}\'s prediction`,
+                text: renderTitle,
                 alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
                 alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
             }, 1800
         );
+
         await pic.write(`${appRoot}/assets/rendered_pictures/${username}.png`)
-    } catch (err) {
+    } catch
+        (err) {
         console.error(err);
     }
 
