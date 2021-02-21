@@ -53,20 +53,18 @@ exports.createVotes = async function (req, res) {
 }
 
 exports.renderImage = async function (req, res) {
-    // console.log(nominees);
+
+
+    console.log(req.body.data);
     const options = {
         root: appRoot,
         dotfiles: 'deny',
         headers: {
             'x-timestamp': Date.now(),
-            'x-sent': true
+            'x-sent': true,
         }
     }
-    console.log(options.root + pictureRoute)
     return res.sendFile(options.root + pictureRoute);
-
-
-    // res.sendStatus(200);
 
 
     // Jimp.read(pictureRoute).then((pic) => {

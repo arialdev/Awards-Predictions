@@ -24,7 +24,7 @@ export class VotesResultComponent implements OnInit {
 
   }
 
-  getRenderedImage() {
+  getRenderedImage(): void {
     this.isImageLoading = true;
     this.voteService.createImage(this.voteService.votes).subscribe(
       (pic) => {
@@ -44,7 +44,7 @@ export class VotesResultComponent implements OnInit {
   }
 
 
-  createImageFromBlob(image: Blob) {
+  private createImageFromBlob(image: Blob): void {
     let reader = new FileReader();
     reader.addEventListener("load", () => {
       this.image = reader.result;

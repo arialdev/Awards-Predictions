@@ -32,10 +32,13 @@ export class VoteService {
   }
 
   public createImage(data): Observable<Blob> {
+    console.log(data);
     const headers = new HttpHeaders()
-      .set('Access-Control-Allow-Origin', '*')
-      .set('responseType', 'blob');
-    return this.http.post<Blob>(`${(this.serverURL)}/image/${this.userService.user._id}`, {data}, {responseType: 'blob' as 'json'});
+      .set('Access-Control-Allow-Origin', '*');
+    return this.http.post<Blob>(`${(this.serverURL)}/image/${this.userService.user._id}`, {data}, {
+      responseType: 'blob' as 'json',
+      headers
+    });
   }
 
 }
