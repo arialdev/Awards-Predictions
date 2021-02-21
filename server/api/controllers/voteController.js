@@ -54,10 +54,12 @@ exports.createVotes = async function (req, res) {
 }
 
 exports.renderImage = async function (req, res) {
-    let username = (await User.findById(req.params.userId)).name;
+    let user = await User.findById(req.params.userId);
+    const username = (user) ? user.name : 'XXXXXX';
+
     let data = req.body.data;
 
-    await renderer(data, username)
+    let rendered = await renderer(data, username)
 
     const options = {
         root: appRoot,
@@ -69,13 +71,37 @@ exports.renderImage = async function (req, res) {
     }
 
     setTimeout(function () {
-        return res.sendFile(`${options.root}/assets/rendered_pictures/${username}.png`);
-    }, 3000)
+        fs.access(appRoot + pictureRoute, fs.F_OK, (err) => {
+            if (err) {
+                console.err(err);
+                return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
+            }
+            if (!rendered)
+                return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
+            console.log("Success at rendering")
+            return res.sendFile(`${options.root}/assets/rendered_pictures/${username}.png`);
+        });
+    }, 500)
 }
 
 async function renderer(data, username) {
     console.log("Setting up configuration");
-    const renderTitle = `${username}\'s ${data[0].awardEvent.name} ${data[0].awardEvent.edition}\'s prediction`;
+    const MAX_ROW = 5;
+    const MAX_COL = 5;
+    let matrix = new Array(MAX_ROW);
+    for (let i = 0; i < matrix.length; i++) {
+        matrix[i] = new Array(MAX_COL);
+    }
+    let c = 0;
+    let s;
+    for (let i = 0; i < MAX_ROW; i++) {
+        for (let j = 0; j < MAX_COL; j++) {
+            matrix[i][j] = data[c]
+            if (matrix[i][j]) s = c++;
+        }
+    }
+    console.log(s, data[s])
+    const renderTitle = `${username}\'s ${data[s].awardEvent.name} ${data[s].awardEvent.edition}\'s prediction`;
     const distanceX = 435;
     const distanceY = 210;
     const titleRelPicX = 0;
@@ -85,18 +111,6 @@ async function renderer(data, username) {
     const maxCardTextWidth = 190;
     // const marginLeft = 62;
 
-    const MAX_ROW = 5;
-    const MAX_COL = 5;
-    let matrix = new Array(MAX_ROW);
-    for (let i = 0; i < matrix.length; i++) {
-        matrix[i] = new Array(MAX_COL);
-    }
-    let c = 0;
-    for (let i = 0; i < MAX_ROW; i++) {
-        for (let j = 0; j < MAX_COL; j++) {
-            matrix[i][j] = data[c++]
-        }
-    }
 
     console.log("Preparing rendering...");
     try {
@@ -104,7 +118,7 @@ async function renderer(data, username) {
         if (pic) console.log("Template loaded");
         else {
             console.err("Error at loading template");
-            return;
+            return false;
         }
 
         let fontTitle = await Jimp.loadFont(Jimp.FONT_SANS_64_WHITE);
@@ -114,7 +128,7 @@ async function renderer(data, username) {
         if (fontName) console.log("Fonts loaded");
         else {
             console.err("Error at loading font:", Jimp.FONT_SANS_64_WHITE)
-            return;
+            return false;
         }
 
         console.log("Embedding items...")
@@ -131,7 +145,7 @@ async function renderer(data, username) {
                     await pic.composite(thumbnail, picX, picY);
 
                     //embedding category
-                    await pic.print(fontCategory, picX + 150, picY+5, {
+                    await pic.print(fontCategory, picX + 150, picY + 5, {
                         text: matrix[c][r].category,
                         alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
                         alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
@@ -164,9 +178,10 @@ async function renderer(data, username) {
         );
 
         await pic.write(`${appRoot}/assets/rendered_pictures/${username}.png`)
-    } catch
-        (err) {
+        return true;
+    } catch (err) {
         console.error(err);
+        return false;
     }
 
 }
