@@ -81,5 +81,4 @@ export class VotingComponent implements OnInit {
       (err) => console.error(err)
     );
   }
-
 }

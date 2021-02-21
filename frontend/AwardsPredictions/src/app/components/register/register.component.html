@@ -14,9 +14,10 @@
         <input id="usernameInput" class="form-control" [@invalidName]="failedInput ? 'open' : 'closed'"
                (@invalidName.done)="failedInput=false" type="text"
                [(ngModel)]="username" [ngModelOptions]="{standalone: true}" aria-describedby="legalHelp"
-               data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a valid username">
+               data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a valid username"
+               (keydown)="keyDownFunction($event)">
       </div>
-      <a id="submitButton" class="btn btn-lg mt-3" (click)="onUsernameSubmit()">
+      <a id="submitButton" class="btn btn-lg mt-3" >
         <span>Start</span>
       </a>
     </form>

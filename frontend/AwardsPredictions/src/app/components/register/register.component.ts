@@ -88,4 +88,11 @@ export class RegisterComponent implements OnInit {
       );
     }
   }
+
+  keyDownFunction(e): void {
+    if (e.keyCode === 13) {
+      this.onUsernameSubmit();
+    }
+  }
+
 }
