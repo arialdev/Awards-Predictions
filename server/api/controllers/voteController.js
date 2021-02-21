@@ -4,8 +4,9 @@ const Vote = mongoose.model('Votes');
 const User = mongoose.model('Users');
 const Award = mongoose.model('AwardEvents');
 const Jimp = require('jimp');
+const path = require("path");
 
-const pictureRoute = './assets/render template.png';
+const pictureRoute = '/assets/render template.png';
 
 exports.createVotes = async function (req, res) {
     const {userId, votes} = req.body;
@@ -51,17 +52,32 @@ exports.createVotes = async function (req, res) {
     return res.status(400).json({message: "Content sent in a wrong format. Expected an array", flag: 4});
 }
 
-function renderImage(nominees) {
+exports.renderImage = async function (req, res) {
     // console.log(nominees);
-    Jimp.read(pictureRoute).then((pic) => {
-        return pic;
-
-    }).catch(error => {
-        return {
-            message: 'Votes were saved successfully but picture was not generated',
-            error: error,
-            flag: 5,
+    const options = {
+        root: appRoot,
+        dotfiles: 'deny',
+        headers: {
+            'x-timestamp': Date.now(),
+            'x-sent': true
         }
-    });
+    }
+    console.log(options.root + pictureRoute)
+    return res.sendFile(options.root + pictureRoute);
+
+
+    // res.sendStatus(200);
+
+
+    // Jimp.read(pictureRoute).then((pic) => {
+    //     return pic;
+    //
+    // }).catch(error => {
+    //     return {
+    //         message: 'Votes were saved successfully but picture was not generated',
+    //         error: error,
+    //         flag: 5,
+    //     }
+    // });
 }
 

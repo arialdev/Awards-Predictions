@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router, NavigationExtras, ActivatedRoute} from '@angular/router';
+import {Router, ActivatedRoute} from '@angular/router';
 import {AwardEventService} from '../../services/award-event.service';
 import {VoteService} from '../../services/vote.service';
 import {UserService} from '../../services/user.service';
@@ -38,7 +38,6 @@ export class VotingComponent implements OnInit {
         console.error(error);
       },
     );
-    await new Promise(r => setTimeout(r, 2000));
   }
 
   onNomineeSelected(categoryIndex: number, nomineeIndex: number): void {
@@ -58,7 +57,7 @@ export class VotingComponent implements OnInit {
 
     this.voteService.sendVotes(this.awardEvent._id, nominees).subscribe(
       () => {
-        const votes = [];
+        const votes = new Array<object>(this.awardEvent.categories.length)
         this.votes.forEach((voteIndex, catIndex) => {
           const vote = {
             awardEvent: {
@@ -72,7 +71,7 @@ export class VotingComponent implements OnInit {
               pic: this.awardEvent.categories[catIndex].nominees[voteIndex].pic,
             }
           };
-          votes.push(vote);
+          votes[catIndex] = vote;
         });
 
         this.voteService.votes = votes;

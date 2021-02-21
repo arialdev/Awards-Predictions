@@ -27,18 +27,15 @@ export class VoteService {
   sendVotes(award, votes): Observable<any> {
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
-      .set('Access-Control-Allow-Origin', '*')
-      .set('responseType', 'blob');
+      .set('Access-Control-Allow-Origin', '*');
     return this.http.post<any>(`${(this.serverURL)}/${award}`, {userId: this.userService.user._id, votes}, {headers});
   }
 
-  getVotesPic(award) {
+  public createImage(data): Observable<Blob> {
     const headers = new HttpHeaders()
-      .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*')
       .set('responseType', 'blob');
-
-    return this.http.get<void>(`${(this.serverURL)}/${award}/${this.userService.user._id}`, {headers});
+    return this.http.post<Blob>(`${(this.serverURL)}/image/${this.userService.user._id}`, {data}, {responseType: 'blob' as 'json'});
   }
 
 }

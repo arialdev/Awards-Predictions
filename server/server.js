@@ -1,3 +1,5 @@
+const path = require("path");
+
 var colors = require('colors');
 const config = require('./config.json');
 
@@ -21,6 +23,8 @@ Nominee = require('./api/models/nominee');
 AwardEvent = require('./api/models/awardEvent');
 Vote = require('./api/models/vote');
 bodyParser = require('body-parser');
+
+global.appRoot = path.resolve(__dirname);
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
