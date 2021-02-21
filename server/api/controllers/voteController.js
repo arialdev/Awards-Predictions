@@ -6,7 +6,7 @@ const Award = mongoose.model('AwardEvents');
 const Jimp = require('jimp');
 const path = require("path");
 
-const pictureRoute = '/assets/render template.png';
+const pictureRoute = '/assets/render-template.png';
 
 exports.createVotes = async function (req, res) {
     const {userId, votes} = req.body;
@@ -53,9 +53,10 @@ exports.createVotes = async function (req, res) {
 }
 
 exports.renderImage = async function (req, res) {
+    let username = (await User.findById(req.params.userId)).name;
 
+    await renderer(req.body, username)
 
-    console.log(req.body.data);
     const options = {
         root: appRoot,
         dotfiles: 'deny',
@@ -64,18 +65,31 @@ exports.renderImage = async function (req, res) {
             'x-sent': true,
         }
     }
-    return res.sendFile(options.root + pictureRoute);
+    return res.sendFile(`${options.root}/assets/rendered_pictures/${username}.png`);
 
 
-    // Jimp.read(pictureRoute).then((pic) => {
-    //     return pic;
-    //
-    // }).catch(error => {
-    //     return {
-    //         message: 'Votes were saved successfully but picture was not generated',
-    //         error: error,
-    //         flag: 5,
-    //     }
-    // });
+}
+
+async function renderer(data, username) {
+    console.log("Preparing rendering")
+    await Jimp.read(appRoot + pictureRoute).then(
+        (pic) => {
+            console.log("Template loaded");
+            Jimp.loadFont(Jimp.FONT_SANS_64_WHITE).then(font => {
+                // pic.print(font, 500, 55, `${username}\'s ${data[0].awardEvent.name} ${data[0].awardEvent.edition}\'s prediction`, 1800);
+                pic.print(font, 200, 55,
+                    {
+                        text: `${username}\'s ${data[0].awardEvent.name} ${data[0].awardEvent.edition}\'s prediction`,
+                        alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
+                        alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+                    }, 1800
+                );
+                pic.write(`${appRoot}/assets/rendered_pictures/${username}.png`)
+            })
+            return pic;
+
+        }).catch(error => {
+        console.error('Fail at loading template', error);
+    });
 }
 
