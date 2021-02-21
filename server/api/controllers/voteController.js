@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const Vote = mongoose.model('Votes');
 const User = mongoose.model('Users');
 const Award = mongoose.model('AwardEvents');
+const Jimp = require('jimp');
 
+const pictureRoute = './assets/render template.png';
 
 exports.createVotes = async function (req, res) {
     const {userId, votes} = req.body;
@@ -29,7 +31,6 @@ exports.createVotes = async function (req, res) {
             }
 
             user.votes = [...user.votes, ...result.map(r => r._id)];
-            console.log(user);
 
             let userRes = await user.save();
             if (!userRes) {
@@ -38,10 +39,29 @@ exports.createVotes = async function (req, res) {
                     flag: 1
                 });
             }
-            return res.status(201).json({message: "All votes were emitted and assigned", flag: 0});
+            return res.status(201).json({
+                message: "All votes were emitted and assigned",
+                flag: 0,
+            });
+
         } catch (error) {
             return res.status(500).json({message: 'An error occurred in server when saving votes', flag: 2});
         }
     }
     return res.status(400).json({message: "Content sent in a wrong format. Expected an array", flag: 4});
 }
+
+function renderImage(nominees) {
+    // console.log(nominees);
+    Jimp.read(pictureRoute).then((pic) => {
+        return pic;
+
+    }).catch(error => {
+        return {
+            message: 'Votes were saved successfully but picture was not generated',
+            error: error,
+            flag: 5,
+        }
+    });
+}
+

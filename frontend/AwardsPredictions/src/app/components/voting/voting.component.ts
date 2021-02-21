@@ -54,9 +54,29 @@ export class VotingComponent implements OnInit {
       nominees.push(vote);
     });
 
+
     this.voteService.sendVotes(this.awardEvent._id, nominees).subscribe(
-      (res) => {
-        this.router.navigate(['/']);
+      () => {
+        const votes = [];
+        this.votes.forEach((voteIndex, catIndex) => {
+          const vote = {
+            awardEvent: {
+              name: this.awardEvent.name,
+              edition: this.awardEvent.edition,
+            },
+            category: this.awardEvent.categories[catIndex].name,
+            voted: {
+              name: this.awardEvent.categories[catIndex].nominees[voteIndex].name,
+              movie: this.awardEvent.categories[catIndex].nominees[voteIndex].movie,
+              pic: this.awardEvent.categories[catIndex].nominees[voteIndex].pic,
+            }
+          };
+          votes.push(vote);
+        });
+
+        this.voteService.votes = votes;
+        console.log(this.voteService.votes);
+        // this.router.navigate(['/']);
       },
       (err) => console.error(err)
     );
