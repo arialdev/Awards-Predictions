@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {Router, NavigationExtras, ActivatedRoute} from '@angular/router';
 import {AwardEventService} from '../../services/award-event.service';
 import {VoteService} from '../../services/vote.service';
 import {UserService} from '../../services/user.service';
@@ -19,7 +19,8 @@ export class VotingComponent implements OnInit {
     private awardEventService: AwardEventService,
     private voteService: VoteService,
     private userService: UserService,
-    public router: Router) {
+    public router: Router,
+    public route: ActivatedRoute) {
   }
 
   async ngOnInit(): Promise<void> {
@@ -76,7 +77,7 @@ export class VotingComponent implements OnInit {
 
         this.voteService.votes = votes;
         console.log(this.voteService.votes);
-        this.router.navigate(['/']);
+        this.router.navigate(['result'], {relativeTo: this.route});
       },
       (err) => console.error(err)
     );
