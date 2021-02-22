@@ -59,10 +59,10 @@ exports.renderImage = async function (req, res) {
 
     let data = req.body.data;
 
-    let rendered = await renderer(data, username)
+    let filename = await renderer(data, username)
 
     const options = {
-        root: appRoot,
+        // root: appRoot,
         dotfiles: 'deny',
         headers: {
             'x-timestamp': Date.now(),
@@ -70,18 +70,15 @@ exports.renderImage = async function (req, res) {
         }
     }
 
-    setTimeout(function () {
-        fs.access(appRoot + pictureRoute, fs.F_OK, (err) => {
-            if (err) {
-                console.err(err);
-                return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
-            }
-            if (!rendered)
-                return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
-            console.log("Success at rendering")
-            return res.sendFile(`${options.root}/assets/rendered_pictures/${username}.png`);
-        });
-    }, 500)
+    fs.access(filename, fs.F_OK, (err) => {
+        if (err) {
+            console.err(err);
+            return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
+        }
+        console.log("Success at rendering")
+        return res.sendFile(filename, options);
+        //TODO delete picture on callback
+    });
 }
 
 async function renderer(data, username) {
@@ -96,11 +93,11 @@ async function renderer(data, username) {
     let s;
     for (let i = 0; i < MAX_ROW; i++) {
         for (let j = 0; j < MAX_COL; j++) {
-            matrix[i][j] = data[c]
-            if (matrix[i][j]) s = c++;
+            matrix[i][j] = data[c++]
+            if (matrix[i][j]) s = c - 1;
         }
     }
-    console.log(s, data[s])
+
     const renderTitle = `${username}\'s ${data[s].awardEvent.name} ${data[s].awardEvent.edition}\'s prediction`;
     const distanceX = 435;
     const distanceY = 210;
@@ -134,8 +131,8 @@ async function renderer(data, username) {
         console.log("Embedding items...")
         for (let c = 0; c < MAX_COL; c++) {
             for (let r = 0; r < MAX_ROW; r++) {
-
                 if (matrix[c][r]) {
+
                     //embedding thumbnail
                     const picX = distanceX * r + 62;
                     const picY = distanceY * c + 62 + 86;
@@ -176,41 +173,13 @@ async function renderer(data, username) {
                 alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
             }, 1800
         );
-
-        await pic.write(`${appRoot}/assets/rendered_pictures/${username}.png`)
-        return true;
+        const filename = `${appRoot}/assets/rendered_pictures/${username}_${Date.now}.png`;
+        await pic.writeAsync(filename)
+        return filename;
     } catch (err) {
         console.error(err);
         return false;
     }
 
-}
-
-function checkExistsWithTimeout(filePath, timeout) {
-    return new Promise(function (resolve, reject) {
-
-        var timer = setTimeout(function () {
-            watcher.close();
-            reject(new Error('File did not exists and was not created during the timeout.'));
-        }, timeout);
-
-        fs.access(filePath, fs.constants.R_OK, function (err) {
-            if (!err) {
-                clearTimeout(timer);
-                watcher.close();
-                resolve();
-            }
-        });
-
-        var dir = path.dirname(filePath);
-        var basename = path.basename(filePath);
-        var watcher = fs.watch(dir, function (eventType, filename) {
-            if (eventType === 'rename' && filename === basename) {
-                clearTimeout(timer);
-                watcher.close();
-                resolve();
-            }
-        });
-    });
 }
 
