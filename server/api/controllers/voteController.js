@@ -71,14 +71,28 @@ exports.renderImage = async function (req, res) {
     }
 
     fs.access(filename, fs.F_OK, (err) => {
-        if (err) {
-            console.err(err);
-            return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
+            if (err) {
+                console.err(err);
+                return res.status(500).json({'message': 'Error at generating the picture (maybe timeout)', err})
+            }
+            console.log("Success at rendering")
+            res.sendFile(filename, options, function (error) {
+                if (error) {
+                    console.error("An error ocurren when sending data".bgRed, error);
+                    res.status(500).json({message: 'Something went wrong at sending the rendered picture', error});
+                }
+                console.log("Picture sent successfully".bgGreen);
+                fs.unlink(filename, (err) => {
+                    if (err) {
+                        console.error(err)
+                        return;
+                    }
+                    console.log(`File deleted: ${filename}`);
+                })
+            });
         }
-        console.log("Success at rendering")
-        return res.sendFile(filename, options);
-        //TODO delete picture on callback
-    });
+    )
+    ;
 }
 
 async function renderer(data, username) {
