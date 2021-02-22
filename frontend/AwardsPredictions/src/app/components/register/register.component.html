@@ -1,17 +1,14 @@
-<!--<div class="container  align-items-center" >-->
-
-
 <div class="row justify-content-md-center">
   <div class="col col-md-8 mb-5">
     <h1 id="register-title">PLEASE ENTER YOUR NAME</h1>
   </div>
 </div>
 <div class="row justify-content-md-center">
-  <div class="col col-sm-9 col-md-7 col-lg-5 col-xl-3">
+  <div class="col col-md-8">
     <form>
       <div class="mb-3">
         <label for="usernameInput" class="form-label"></label>
-        <input id="usernameInput" class="form-control" [@invalidName]="failedInput ? 'open' : 'closed'"
+        <input id="usernameInput" class="form-control m-auto" [@invalidName]="failedInput ? 'open' : 'closed'"
                (@invalidName.done)="failedInput=false" type="text"
                [(ngModel)]="username" [ngModelOptions]="{standalone: true}" aria-describedby="legalHelp"
                data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a valid username"

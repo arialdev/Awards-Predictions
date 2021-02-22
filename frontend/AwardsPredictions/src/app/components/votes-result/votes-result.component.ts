@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {UserService} from '../../services/user.service';
 import {Router} from '@angular/router';
-import {VoteService} from "../../services/vote.service";
+import {VoteService} from '../../services/vote.service';
 
 @Component({
   selector: 'app-votes-result',
@@ -17,11 +17,10 @@ export class VotesResultComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<void> {
-    // if (!this.userService.user) {
-    //   await this.router.navigate(['voting']);
-    // }
+    if (!this.userService.user) {
+      await this.router.navigate(['voting']);
+    }
     this.getRenderedImage();
-
   }
 
   getRenderedImage(): void {

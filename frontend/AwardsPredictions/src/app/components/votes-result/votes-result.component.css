@@ -1,0 +1,12 @@
+#downloadInfo {
+  color: whitesmoke;
+  border: 1px solid gold;
+  max-width: fit-content;
+  background-color: #080804;
+  font-size: 5vw;
+}
+
+#result-pic {
+  border: 1px solid;
+  border-radius: .5rem;
+}

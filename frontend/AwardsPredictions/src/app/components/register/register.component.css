@@ -34,6 +34,7 @@ h1 {
   font-weight: bold;
   border: 2px solid #e7c683;
   text-align: center;
+  max-width: 400px;
 }
 
 #usernameInput:focus {

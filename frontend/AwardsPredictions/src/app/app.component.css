@@ -8,3 +8,14 @@ header {
   height: 55vh;
 }
 
+#logo {
+  color: whitesmoke;
+  font-family: 'caviar-dreams', serif
+}
+
+#logo span {
+  font-size: 12px;
+  padding-left: 2px;
+  color: #fdb856;
+  font-family: Roboto, serif;
+}
