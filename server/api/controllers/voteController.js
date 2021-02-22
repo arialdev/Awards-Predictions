@@ -155,12 +155,12 @@ async function renderer(data, username) {
                     if (thumbnail) await thumbnail.scale(0.46)
                     await pic.composite(thumbnail, picX, picY);
 
-                    //embedding category
-                    await pic.print(fontCategory, picX + 150, picY + 5, {
-                        text: matrix[c][r].category,
-                        alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
-                        alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
-                    }, maxCardTextWidth)
+                    //embedding category (only for blank template)
+                    // await pic.print(fontCategory, picX + 150, picY + 5, {
+                    //     text: matrix[c][r].category,
+                    //     alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
+                    //     alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+                    // }, maxCardTextWidth)
 
                     //embedding name
                     await pic.print(fontName, picX + 150, picY + 50, {
