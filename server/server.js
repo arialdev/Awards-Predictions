@@ -1038,7 +1038,7 @@ async function initializeDatabase() {
         {
             'name': 'Al Pacino',
             'pic': 'https://www.goldenglobes.com/sites/default/files/styles/portrait_medium/public/people/cover_images/al_pacino.jpg?format=pjpg&auto=webp&optimize=high',
-            'movie': 'nm0000199',
+            'movie': 'Hunters',
             'link': 'https://www.imdb.com/title/nm0000199',
             'category': GOLDEN_GLOBES.categories[20]._id,
             'awardEvent': GOLDEN_GLOBES._id,
