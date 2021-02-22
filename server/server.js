@@ -673,7 +673,7 @@ async function initializeDatabase() {
         {
             'name': 'Two of Us (USA, France)',
             'pic': 'https://www.goldenglobes.com/sites/default/files/styles/portrait_medium/public/2021-02/two-of-us.jpg?format=pjpg&auto=webp&optimize=high',
-            'movie': 'Two of Us',
+            'movie': 'Two of Us (USA, France)',
             'link': 'https://www.imdb.com/title/tt9845110',
             'category': GOLDEN_GLOBES.categories[11]._id,
             'awardEvent': GOLDEN_GLOBES._id,
