@@ -81,7 +81,7 @@ exports.renderImage = async function (req, res) {
                     console.error("An error ocurren when sending data".bgRed, error);
                     res.status(500).json({message: 'Something went wrong at sending the rendered picture', error});
                 }
-                console.log("Picture sent successfully".bgGreen);
+                console.log("Picture sent successfully".black.bold.bgGreen);
                 fs.unlink(filename, (err) => {
                     if (err) {
                         console.error(err)
