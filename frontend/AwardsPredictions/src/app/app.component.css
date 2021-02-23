@@ -8,6 +8,11 @@ header {
   height: 55vh;
 }
 
+@font-face {
+  font-family: 'caviar-dreams'; /*a name to be used later*/
+  src: url('../assets/fonts/caviar_dreams/CaviarDreams.ttf');
+}
+
 #logo {
   color: whitesmoke;
   font-family: 'caviar-dreams', serif
@@ -28,4 +33,15 @@ header {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.spinner {
+  width: 4rem;
+  height: 4rem;
+}
+
+.spinner-text {
+  color: whitesmoke;
+  font-family: caviar-dreams, serif;
+  font-size: 2rem;
 }

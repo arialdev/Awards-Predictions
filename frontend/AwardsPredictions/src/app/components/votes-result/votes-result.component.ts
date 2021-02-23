@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {UserService} from '../../services/user.service';
 import {Router} from '@angular/router';
 import {VoteService} from '../../services/vote.service';
+import {SpinnerService} from '../../services/spinner.service';
 
 @Component({
   selector: 'app-votes-result',
@@ -18,9 +19,12 @@ export class VotesResultComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!this.userService.user) {
+      SpinnerService.stopSpinner();
       await this.router.navigate(['voting']);
+    } else {
+      SpinnerService.startSpinner('Rendering...');
+      this.getRenderedImage();
     }
-    this.getRenderedImage();
   }
 
   getRenderedImage(): void {
@@ -30,22 +34,20 @@ export class VotesResultComponent implements OnInit {
         console.log('Correcto');
         this.createImageFromBlob(pic);
         this.isImageLoading = false;
-
       },
       (err) => {
-        if (err.url) {
-          this.image = err.url;
-        }
         this.isImageLoading = false;
         console.error(err);
       },
+      () => SpinnerService.stopSpinner(),
     );
   }
 
 
   private createImageFromBlob(image: Blob): void {
-    let reader = new FileReader();
-    reader.addEventListener("load", () => {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+      SpinnerService.stopSpinner();
       this.image = reader.result;
     }, false);
 

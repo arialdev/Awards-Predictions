@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light bg-dark mb-5">
   <div class="container-fluid no-select">
     <a id="logo" class="navbar-brand me-auto ms-lg-3 ms-sm-2 ms-0 "
-       routerLink="/register" >
+       routerLink="/register">
       Awards Predictions <span>BETA</span>
     </a>
 
@@ -16,8 +16,17 @@
 
 <div id="content-container" class="container-fluid d-inline-flex align-items-center">
   <div class="row w-100 justify-content-center m-auto">
-    <div class="col-10">
-      <router-outlet></router-outlet>
+    <div class="col col-lg-10">
+            <router-outlet></router-outlet>
+      <div *ngIf="spin.spinning">
+        <div class="d-flex justify-content-center">
+          <div class="spinner spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+
+        </div>
+        <p class="spinner-text no-select mt-3">{{spin.text}}</p>
+      </div>
     </div>
   </div>
 </div>

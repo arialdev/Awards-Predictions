@@ -4,6 +4,7 @@ import {AwardEventService} from '../../services/award-event.service';
 import {VoteService} from '../../services/vote.service';
 import {UserService} from '../../services/user.service';
 import {AwardEvent} from '../../interfaces/award-event';
+import {SpinnerService} from '../../services/spinner.service';
 
 @Component({
   selector: 'app-voting',
@@ -45,6 +46,8 @@ export class VotingComponent implements OnInit {
   }
 
   async submitVotes(): Promise<void> {
+    SpinnerService.startSpinner('Submitting votes');
+
     const nominees = [];
     this.votes.forEach((voteIndex, catIndex) => {
       const vote = {
@@ -75,10 +78,12 @@ export class VotingComponent implements OnInit {
         });
 
         this.voteService.votes = votes;
-        console.log(this.voteService.votes);
         this.router.navigate(['result'], {relativeTo: this.route});
       },
-      (err) => console.error(err)
+      (err) => {
+        console.error(err);
+        SpinnerService.stopSpinner();
+      }
     );
   }
 }
