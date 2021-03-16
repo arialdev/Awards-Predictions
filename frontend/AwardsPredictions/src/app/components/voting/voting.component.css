@@ -3,9 +3,15 @@
   src: url('../../../assets/fonts/roboto/Roboto-Light.ttf');
 }
 
-h1 {
+.category-name {
   color: white;
   text-align: start;
+}
+
+#award-info {
+  font-family: 'caviar-dreams', serif;
+  font-size: 3rem;
+  color: white;
 }
 
 #voting-info-title {

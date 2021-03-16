@@ -244,7 +244,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Leslie Odom Jr.',
-            'pic': 'https://www.gannett-cdn.com/presto/2018/09/04/PCIN/f62e816f-5d0d-4503-b97c-40de763e2d75-LOJ_1_1.jpg',
+            'pic': 'https://bloximages.chicago2.vip.townnews.com/readingeagle.com/content/tncms/assets/v3/editorial/d/64/d64fe1ac-ba1d-11ea-ad0e-e79842bd5c39/5efa09c1a8ff8.image.jpg',
             'movie': 'One Night in Miami...',
             'link': 'https://www.imdb.com/name/nm0705152',
             'category': OSCARS.categories[1]._id,
@@ -269,7 +269,7 @@ async function initializeDatabase() {
         /** THIRD CATEGORY **/
         {
             'name': 'Viola Davis',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNzUxNjM4ODI1OV5BMl5BanBnXkFtZTgwNTEwNDE2OTE@.jpg',
+            'pic': 'http://cdn2.estamosrodando.com/biografias/0/2/viola-davis-113970.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/name/nm0205626',
             'category': OSCARS.categories[2]._id,
@@ -277,7 +277,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Andra Day',
-            'pic': 'https://pyxis.nymag.com/v1/imgs/e31/386/7a47d1fb4821fd26466ad51eac8d10f5f8-andra-day-01.w710.jpg',
+            'pic': 'https://img.huffingtonpost.com/asset/603c6d30270000ec098c59cc.jpeg',
             'movie': 'The United States vs. Billie Holiday',
             'link': 'https://www.imdb.com/name/nm7363531',
             'category': OSCARS.categories[2]._id,
@@ -293,7 +293,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Frances McDormand',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMjI3NzgxNjYzOF5BMl5BanBnXkFtZTgwNTIxMjExNzE@.jpg',
+            'pic': 'https://image.tmdb.org/t/p/original/q3KYBy3Cs4GXLjmGH64GkUi2l6.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/name/nm0000531',
             'category': OSCARS.categories[2]._id,
@@ -310,7 +310,7 @@ async function initializeDatabase() {
         /** FOURTH CATEGORY **/
         {
             'name': 'Maria Bakalova',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMGRlNjgzNjAtMzkyMS00YmU5LWE5ODYtMDIzNmE1MmRmYzVmXkEyXkFqcGdeQXVyMTA1NDMzMDM4.jpg',
+            'pic': 'https://www.thewrap.com/wp-content/uploads/2021/02/CMS-Maria-Bakalova-7-scaled.jpg',
             'movie': 'Borat Subsequent Moviefilm',
             'link': 'https://www.imdb.com/name/nm7210025',
             'category': OSCARS.categories[3]._id,

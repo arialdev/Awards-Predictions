@@ -30,6 +30,4 @@ export class UserService {
       .set('Access-Control-Allow-Origin', '*');
     return this.http.post<User>(`${(this.serverURL)}`, {name: username}, {headers});
   }
-
-
 }

@@ -1,9 +1,11 @@
+<h1 id="award-info" class="mb-4">
+  {{this.awardEvent.name}} - {{this.awardEvent.edition}}<sup>{{this.getOrdinal(this.awardEvent.edition)}}</sup> edition
+</h1>
 <h3 id="voting-info-title" class="mb-5">Select a nominee per category by clicking on it</h3>
 
 <div class="row category-container mx-auto" [class.mt-5]="!isFirst" [class.mb-5]="isLast"
      *ngFor="let category of this.awardEvent.categories; index as i;first as isFirst;last as isLast">
-  <h1 class="display-6">{{category.name}}</h1>
-
+  <h1 class="display-6 category-name">{{category.name}}</h1>
   <div class="d-flex flex-row flex-nowrap overflow-auto">
     <div class="col mx-2" *ngFor="let nominee of category.nominees; index as j" style="min-width: 200px;">
       <div class="card h-100" [class.selected]="this.votes[i] ===j" (click)="onNomineeSelected(i,j)">

@@ -15,7 +15,7 @@ export class VotingComponent implements OnInit {
 
   awardEvent: AwardEvent;
   votes: number [];
-  defaultPic = '/assets/images/avatar.jpg';
+  defaultPic = '/assets/images/no-picture.jpg';
 
   constructor(
     private awardEventService: AwardEventService,
@@ -86,5 +86,19 @@ export class VotingComponent implements OnInit {
         SpinnerService.stopSpinner();
       }
     );
+  }
+
+  getOrdinal(edition: number): string {
+    const lastDigit: string = edition.toString().substr(-1, 1);
+    switch (lastDigit) {
+      case '1':
+        return `st`;
+      case '2':
+        return `nd`;
+      case '3':
+        return `rd`;
+      default:
+        return `th`;
+    }
   }
 }

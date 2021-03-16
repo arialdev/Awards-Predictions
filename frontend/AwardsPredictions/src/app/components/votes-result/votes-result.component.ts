@@ -55,6 +55,4 @@ export class VotesResultComponent implements OnInit {
       reader.readAsDataURL(image);
     }
   }
-
-
 }
