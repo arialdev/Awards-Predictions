@@ -9,7 +9,7 @@
       <div class="col" *ngFor="let nominee of category.nominees; index as j">
         <div class="card h-100" [class.selected]="this.votes[i] ===j" (click)="onNomineeSelected(i,j)">
           <img
-            src="{{nominee.pic}}"
+            src="{{nominee.pic==='#'? this.defaultPic : nominee.pic}}"
             class="card-img-top" alt="{{nominee.name}} picture">
           <div class="card-body">
             <h5 class="card-title">{{nominee.name}}</h5>

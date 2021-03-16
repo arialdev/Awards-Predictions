@@ -43,7 +43,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     // this remains until AwardEventSelection component is created
-    this.awardEventService.getAwardEventByNameAndEdition('Golden Globes', 78).subscribe(
+    this.awardEventService.getAwardEventByNameAndEdition('Oscars', 93).subscribe(
       (award: AwardEvent) => {
         this.redirectRoute = `/voting/${award.name}&${award.edition}`;
       },

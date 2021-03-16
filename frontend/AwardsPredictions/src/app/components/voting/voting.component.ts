@@ -15,6 +15,7 @@ export class VotingComponent implements OnInit {
 
   awardEvent: AwardEvent;
   votes: number [];
+  defaultPic = '/assets/images/avatar.jpg';
 
   constructor(
     private awardEventService: AwardEventService,
@@ -60,7 +61,7 @@ export class VotingComponent implements OnInit {
 
     this.voteService.sendVotes(this.awardEvent._id, nominees).subscribe(
       () => {
-        const votes = new Array<object>(this.awardEvent.categories.length)
+        const votes = new Array<object>(this.awardEvent.categories.length);
         this.votes.forEach((voteIndex, catIndex) => {
           const vote = {
             awardEvent: {
