@@ -47,27 +47,17 @@ h1 {
   /*background-color: yellow;*/
 }
 
-.card-body {
-  height: 140px;
+.card {
+  border: 6px solid transparent;
 }
 
-.card-title, .card-text {
-  white-space: normal;
+.card-img-top {
+  height: 273px;
+  width: auto;
+  max-width: 100%;
 }
 
 .card:hover, .card.selected {
-  border: 6px groove gold;
+  border: 6px groove gold !important;
   cursor: pointer;
-}
-
-.testimonial-group > .row {
-  display: block;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.testimonial-group > .row > .col {
-  display: inline-block;
-  min-width: 150px;
 }

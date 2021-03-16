@@ -4,22 +4,21 @@
      *ngFor="let category of this.awardEvent.categories; index as i;first as isFirst;last as isLast">
   <h1 class="display-6">{{category.name}}</h1>
 
-  <div class="container testimonial-group">
-    <div class="row row-cols-5 g-3">
-      <div class="col" *ngFor="let nominee of category.nominees; index as j">
-        <div class="card h-100" [class.selected]="this.votes[i] ===j" (click)="onNomineeSelected(i,j)">
-          <img
-            src="{{nominee.pic==='#'? this.defaultPic : nominee.pic}}"
-            class="card-img-top" alt="{{nominee.name}} picture">
-          <div class="card-body">
-            <h5 class="card-title">{{nominee.name}}</h5>
-            <p class="card-text" *ngIf="nominee.name!==nominee.movie">{{nominee.movie}}</p>
-          </div>
+  <div class="d-flex flex-row flex-nowrap overflow-auto">
+    <div class="col mx-2" *ngFor="let nominee of category.nominees; index as j" style="min-width: 200px;">
+      <div class="card h-100" [class.selected]="this.votes[i] ===j" (click)="onNomineeSelected(i,j)">
+        <img
+          src="{{nominee.pic==='#'? this.defaultPic : nominee.pic}}"
+          class="card-img-top" alt="{{nominee.name}} picture">
+        <div class="card-body">
+          <h5 class="card-title">{{nominee.name}}</h5>
+          <p class="card-text mt-auto" *ngIf="nominee.name!==nominee.movie">{{nominee.movie}}</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <!--<a id="fixed-button" onclick="window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth' });">-->
 <!--  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"-->

@@ -187,7 +187,7 @@ async function initializeDatabase() {
         /** FIRST CATEGORY **/
         {
             'name': 'Riz Ahmed',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTcxMTQ4MzY2Nl5BMl5BanBnXkFtZTgwMzAxOTY3MjI@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTcxMTQ4MzY2Nl5BMl5BanBnXkFtZTgwMzAxOTY3MjI@.jpg',
             'movie': 'Sound of Metal',
             'link': 'https://www.imdb.com/name/nm1981893',
             'category': OSCARS.categories[0]._id,
@@ -195,7 +195,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Chadwick Boseman',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTk2OTY5MzcwMV5BMl5BanBnXkFtZTgwODM4MDI5MjI@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTk2OTY5MzcwMV5BMl5BanBnXkFtZTgwODM4MDI5MjI@.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/name/nm1569276',
             'category': OSCARS.categories[0]._id,
@@ -203,7 +203,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Anthony Hopkins',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTg5ODk1NTc5Ml5BMl5BanBnXkFtZTYwMjAwOTI4._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTg5ODk1NTc5Ml5BMl5BanBnXkFtZTYwMjAwOTI4.jpg',
             'movie': 'The Father',
             'link': 'https://www.imdb.com/name/nm0000164',
             'category': OSCARS.categories[0]._id,
@@ -211,7 +211,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Gary Oldman',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTc3NTM4MzQ5MV5BMl5BanBnXkFtZTcwOTE4MDczNw@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTc3NTM4MzQ5MV5BMl5BanBnXkFtZTcwOTE4MDczNw@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/name/nm0000198',
             'category': OSCARS.categories[0]._id,
@@ -219,7 +219,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Steven Yeun',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjE4YmU2MTItMjE0ZC00Y2YxLWJkYWMtOTNiMTc0MDFjNjJlXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjE4YmU2MTItMjE0ZC00Y2YxLWJkYWMtOTNiMTc0MDFjNjJlXkEyXkFqcGdeQXVyMjQwMDg0Ng@@.jpg',
             'movie': 'Minari',
             'link': 'https://www.imdb.com/name/nm3081796',
             'category': OSCARS.categories[0]._id,
@@ -228,7 +228,7 @@ async function initializeDatabase() {
         /** SECOND CATEGORY **/
         {
             'name': 'Sacha Baron Cohen',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTkzMTY4Nzc2NF5BMl5BanBnXkFtZTgwODc3MDI2MDE@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTkzMTY4Nzc2NF5BMl5BanBnXkFtZTgwODc3MDI2MDE@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.imdb.com/name/nm0056187',
             'category': OSCARS.categories[1]._id,
@@ -236,7 +236,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Daniel Kaluuya',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTk1MzgzOTg5OV5BMl5BanBnXkFtZTcwNDQ4NjMxOA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTk1MzgzOTg5OV5BMl5BanBnXkFtZTcwNDQ4NjMxOA@@.jpg',
             'movie': 'Judas and the Black Messiah',
             'link': 'https://www.imdb.com/name/nm2257207',
             'category': OSCARS.categories[1]._id,
@@ -244,7 +244,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Leslie Odom Jr.',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BODU4ZjgzNTUtY2Y2Yy00ZTA2LWI4ZGUtNjQxMzRhNmIzYjlhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BODU4ZjgzNTUtY2Y2Yy00ZTA2LWI4ZGUtNjQxMzRhNmIzYjlhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@.jpg',
             'movie': 'One Night in Miami...',
             'link': 'https://www.imdb.com/name/nm0705152',
             'category': OSCARS.categories[1]._id,
@@ -252,7 +252,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Paul Raci',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZDk1NGJiOGYtYWJlMi00M2YwLWE1NzQtOTZiZjJlNTUwZmRkXkEyXkFqcGdeQXVyMTQ5NDQ5Mw@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZDk1NGJiOGYtYWJlMi00M2YwLWE1NzQtOTZiZjJlNTUwZmRkXkEyXkFqcGdeQXVyMTQ5NDQ5Mw@@.jpg',
             'movie': 'Sound of metal',
             'link': 'https://www.imdb.com/name/nm0001467',
             'category': OSCARS.categories[1]._id,
@@ -260,7 +260,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Lakeith Stanfield',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTU3NTg3MTc5NV5BMl5BanBnXkFtZTgwNzUzMzg1MzI@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTU3NTg3MTc5NV5BMl5BanBnXkFtZTgwNzUzMzg1MzI@.jpg',
             'movie': 'Judas and the Black Messiah',
             'link': 'https://www.imdb.com/name/nm3147751/',
             'category': OSCARS.categories[1]._id,
@@ -269,7 +269,7 @@ async function initializeDatabase() {
         /** THIRD CATEGORY **/
         {
             'name': 'Viola Davis',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNzUxNjM4ODI1OV5BMl5BanBnXkFtZTgwNTEwNDE2OTE@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNzUxNjM4ODI1OV5BMl5BanBnXkFtZTgwNTEwNDE2OTE@.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/name/nm0205626',
             'category': OSCARS.categories[2]._id,
@@ -277,7 +277,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Andra Day',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTk5ZDNkMjUtMjY0NC00NWI5LTk1ODEtNWE0ODJiNGNkM2MxXkEyXkFqcGdeQXVyMTE1MTYxNDAw._UX297.jpg',
+            'pic': 'https://pyxis.nymag.com/v1/imgs/e31/386/7a47d1fb4821fd26466ad51eac8d10f5f8-andra-day-01.w710.jpg',
             'movie': 'The United States vs. Billie Holiday',
             'link': 'https://www.imdb.com/name/nm7363531',
             'category': OSCARS.categories[2]._id,
@@ -285,7 +285,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Vanessa Kirby',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYzUzNjkwMjMtODRiNi00ZTliLWE3Y2ItMDJmZmFmNjg1YTMyXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYzUzNjkwMjMtODRiNi00ZTliLWE3Y2ItMDJmZmFmNjg1YTMyXkEyXkFqcGdeQXVyMjQwMDg0Ng@@.jpg',
             'movie': 'Pieces of a Woman',
             'link': 'https://www.imdb.com/name/nm3948952',
             'category': OSCARS.categories[2]._id,
@@ -293,7 +293,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Frances McDormand',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMjI3NzgxNjYzOF5BMl5BanBnXkFtZTgwNTIxMjExNzE@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMjI3NzgxNjYzOF5BMl5BanBnXkFtZTgwNTIxMjExNzE@.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/name/nm0000531',
             'category': OSCARS.categories[2]._id,
@@ -301,7 +301,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Carey Mulligan',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjQ1NGM2ODUtODc3Ny00ZjdhLTljNzEtMmY2M2M2MDY2Y2IzXkEyXkFqcGdeQXVyNzg5MzIyOA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjQ1NGM2ODUtODc3Ny00ZjdhLTljNzEtMmY2M2M2MDY2Y2IzXkEyXkFqcGdeQXVyNzg5MzIyOA@@.jpg',
             'movie': 'Promising Young Woman',
             'link': 'https://www.imdb.com/name/nm1659547',
             'category': OSCARS.categories[2]._id,
@@ -310,7 +310,7 @@ async function initializeDatabase() {
         /** FOURTH CATEGORY **/
         {
             'name': 'Maria Bakalova',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMGRlNjgzNjAtMzkyMS00YmU5LWE5ODYtMDIzNmE1MmRmYzVmXkEyXkFqcGdeQXVyMTA1NDMzMDM4._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMGRlNjgzNjAtMzkyMS00YmU5LWE5ODYtMDIzNmE1MmRmYzVmXkEyXkFqcGdeQXVyMTA1NDMzMDM4.jpg',
             'movie': 'Borat Subsequent Moviefilm',
             'link': 'https://www.imdb.com/name/nm7210025',
             'category': OSCARS.categories[3]._id,
@@ -318,7 +318,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Glenn Close',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTEwNDk5MTU2NTNeQTJeQWpwZ15BbWU3MDczNjEzMTM@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTEwNDk5MTU2NTNeQTJeQWpwZ15BbWU3MDczNjEzMTM@.jpg',
             'movie': 'Hillbilly Elegy',
             'link': 'https://www.imdb.com/name/nm0000335',
             'category': OSCARS.categories[3]._id,
@@ -326,7 +326,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Olivia Colman',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTY4MzU2ODIzNl5BMl5BanBnXkFtZTgwMTM2OTA1NzM@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTY4MzU2ODIzNl5BMl5BanBnXkFtZTgwMTM2OTA1NzM@.jpg',
             'movie': 'The Father',
             'link': 'https://www.imdb.com/name/nm1469236',
             'category': OSCARS.categories[3]._id,
@@ -334,7 +334,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Amanda Seyfried',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTc0MTE0Mzc5MV5BMl5BanBnXkFtZTgwMTc1NzgwNjE@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTc0MTE0Mzc5MV5BMl5BanBnXkFtZTgwMTc1NzgwNjE@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/name/nm1086543',
             'category': OSCARS.categories[3]._id,
@@ -342,7 +342,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Youn Yuh-jung',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTcyMDI1NDk4NV5BMl5BanBnXkFtZTcwNzM2Mzc3NA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTcyMDI1NDk4NV5BMl5BanBnXkFtZTcwNzM2Mzc3NA@@.jpg',
             'movie': 'Minari',
             'link': 'https://www.imdb.com/name/nm0950926',
             'category': OSCARS.categories[3]._id,
@@ -351,7 +351,7 @@ async function initializeDatabase() {
         /** FIFTH CATEGORY **/
         {
             'name': 'Onward',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTZlYzk3NzQtMmViYS00YWZmLTk5ZTEtNWE0NGVjM2MzYWU1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTZlYzk3NzQtMmViYS00YWZmLTk5ZTEtNWE0NGVjM2MzYWU1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@.jpg',
             'movie': 'Onward',
             'link': 'https://www.imdb.com/title/tt7146812',
             'category': OSCARS.categories[4]._id,
@@ -359,7 +359,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Over the Moon',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTI0ZjVhM2ItMmFkOS00ZmFiLTg4NGQtODJjNTZmMDYxMWMyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTI0ZjVhM2ItMmFkOS00ZmFiLTg4NGQtODJjNTZmMDYxMWMyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Over the Moon',
             'link': 'https://www.imdb.com/title/tt7488208',
             'category': OSCARS.categories[4]._id,
@@ -367,7 +367,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'A Shaun the Sheep Movie: Farmageddon',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTdjZjBkMDMtODBlNi00N2E0LWE1OGItOTgxODNmMDkzNGJmXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTdjZjBkMDMtODBlNi00N2E0LWE1OGItOTgxODNmMDkzNGJmXkEyXkFqcGdeQXVyNjg2NjQwMDQ@.jpg',
             'movie': 'A Shaun the Sheep Movie: Farmageddon',
             'link': 'https://www.imdb.com/title/tt6193408',
             'category': OSCARS.categories[4]._id,
@@ -375,7 +375,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Soul',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@.jpg',
             'movie': 'Soul',
             'link': 'https://www.imdb.com/title/tt2948372',
             'category': OSCARS.categories[4]._id,
@@ -383,7 +383,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Wolfwalkers',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTA4MWQ4NGUtOGQ0MS00M2QyLWE5MDItZWM2YzA0ZDgxZTA2XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTA4MWQ4NGUtOGQ0MS00M2QyLWE5MDItZWM2YzA0ZDgxZTA2XkEyXkFqcGdeQXVyNjY1MTg4Mzc@.jpg',
             'movie': 'Wolfwalkers',
             'link': 'https://www.imdb.com/title/tt5198068',
             'category': OSCARS.categories[4]._id,
@@ -392,7 +392,7 @@ async function initializeDatabase() {
         /** SIXTH CATEGORY **/
         {
             'name': 'Sean Bobbitt',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@.jpg',
             'movie': 'Judas and the Black Messiah',
             'link': 'https://www.imdb.com/title/tt10272386',
             'category': OSCARS.categories[5]._id,
@@ -400,7 +400,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Erik Messerschmidt',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10618286',
             'category': OSCARS.categories[5]._id,
@@ -408,7 +408,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Dariusz Wolski',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'News of the World',
             'link': 'https://www.imdb.com/title/tt6878306',
             'category': OSCARS.categories[5]._id,
@@ -416,7 +416,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Joshua James Richards',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/title/tt9620292',
             'category': OSCARS.categories[5]._id,
@@ -424,7 +424,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Phedon Papamichael',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.imdb.com/title/tt1070874',
             'category': OSCARS.categories[5]._id,
@@ -433,7 +433,7 @@ async function initializeDatabase() {
         /** SEVENTH CATEGORY **/
         {
             'name': 'Alexandra Byrne',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOGRiODEzM2QtOTUyYi00MWRlLTg4MzMtZGI0YmUzNWUyMjQ0XkEyXkFqcGdeQXVyMDA4NzMyOA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOGRiODEzM2QtOTUyYi00MWRlLTg4MzMtZGI0YmUzNWUyMjQ0XkEyXkFqcGdeQXVyMDA4NzMyOA@@.jpg',
             'movie': 'Emma',
             'link': 'https://www.imdb.com/name/nm0126107',
             'category': OSCARS.categories[6]._id,
@@ -441,7 +441,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Ann Roth',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX297_CR0,0,297,396_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/name/nm0744778/',
             'category': OSCARS.categories[6]._id,
@@ -449,7 +449,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Trish Summerville',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10618286',
             'category': OSCARS.categories[6]._id,
@@ -457,7 +457,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Bina Daigeler',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@.jpg',
             'movie': 'Mulan',
             'link': 'https://www.imdb.com/name/nm0197257',
             'category': OSCARS.categories[6]._id,
@@ -465,7 +465,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Massimo Cantini Parrini',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNzgxNWJiOWQtZDA5Mi00NjBkLWIxMzUtZTg3Yjk5NjYyMDZjXkEyXkFqcGdeQXVyMDA4NzMyOA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNzgxNWJiOWQtZDA5Mi00NjBkLWIxMzUtZTg3Yjk5NjYyMDZjXkEyXkFqcGdeQXVyMDA4NzMyOA@@.jpg',
             'movie': 'Pinocchio',
             'link': 'https://www.imdb.com/name/nm1964768',
             'category': OSCARS.categories[6]._id,
@@ -474,7 +474,7 @@ async function initializeDatabase() {
         /** EIGHTH CATEGORY **/
         {
             'name': 'Thomas Vinterberg',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTAzNzE4OTAwMTdeQTJeQWpwZ15BbWU2MDEwNjMyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTAzNzE4OTAwMTdeQTJeQWpwZ15BbWU2MDEwNjMyNQ@@.jpg',
             'movie': 'Another Round',
             'link': 'https://www.imdb.com/name/nm0899121',
             'category': OSCARS.categories[7]._id,
@@ -482,7 +482,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'David Fincher',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTc1NDkwMTQ2MF5BMl5BanBnXkFtZTcwMzY0ODkyMg@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTc1NDkwMTQ2MF5BMl5BanBnXkFtZTcwMzY0ODkyMg@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/name/nm0000399',
             'category': OSCARS.categories[7]._id,
@@ -490,7 +490,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Lee Isaac Chung',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMGIzMGJhYmQtZDYwYy00OWVmLWFiMGMtNzEwMDk1NTNhOTRhXkEyXkFqcGdeQXVyNzY1ODU1OTk@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMGIzMGJhYmQtZDYwYy00OWVmLWFiMGMtNzEwMDk1NTNhOTRhXkEyXkFqcGdeQXVyNzY1ODU1OTk@.jpg',
             'movie': 'Minari',
             'link': 'https://www.imdb.com/name/nm1818032',
             'category': OSCARS.categories[7]._id,
@@ -498,7 +498,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Chloé Zhao',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMWZlMjc3M2MtMDFlYy00OWIwLTkxMTUtOWYzNGU5ZmQ1MzgwXkEyXkFqcGdeQXVyMTk2ODc0MjY@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMWZlMjc3M2MtMDFlYy00OWIwLTkxMTUtOWYzNGU5ZmQ1MzgwXkEyXkFqcGdeQXVyMTk2ODc0MjY@.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/name/nm2125482',
             'category': OSCARS.categories[7]._id,
@@ -506,7 +506,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Emerald Fennell',
-            'pic': 'https://www.imdb.com/name/nm2193504',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNWRmYTIxNjYtN2JiMy00NTM3LTlkZTItZjI5YmZjMTZiZmMwXkEyXkFqcGdeQXVyMjMyMDMyNjI@.jpg',
             'movie': 'Promising Young Woman',
             'link': 'https://www.imdb.com/name/nm2193504',
             'category': OSCARS.categories[7]._id,
@@ -515,7 +515,7 @@ async function initializeDatabase() {
         /** NINTH CATEGORY **/
         {
             'name': 'Collective',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTZlYzk3NzQtMmViYS00YWZmLTk5ZTEtNWE0NGVjM2MzYWU1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTZlYzk3NzQtMmViYS00YWZmLTk5ZTEtNWE0NGVjM2MzYWU1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@.jpg',
             'movie': 'Collective',
             'link': 'https://www.imdb.com/title/tt10706602',
             'category': OSCARS.categories[8]._id,
@@ -523,7 +523,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Crip camp',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTNlMDI3MGYtY2FmNy00ZDdmLTkzZDMtMDg1MWYyM2M4YzQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTNlMDI3MGYtY2FmNy00ZDdmLTkzZDMtMDg1MWYyM2M4YzQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Crip camp',
             'link': 'https://www.imdb.com/title/tt8923484',
             'category': OSCARS.categories[8]._id,
@@ -531,7 +531,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The mole agent',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYWI1MGQ3ZDktZmNhYi00MzY4LWFkMTQtZTA2YTgzYWViM2ZjXkEyXkFqcGdeQXVyMTA3MDk2NDg2._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYWI1MGQ3ZDktZmNhYi00MzY4LWFkMTQtZTA2YTgzYWViM2ZjXkEyXkFqcGdeQXVyMTA3MDk2NDg2.jpg',
             'movie': 'The mole agent',
             'link': 'https://www.imdb.com/title/tt11394298',
             'category': OSCARS.categories[8]._id,
@@ -539,7 +539,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'My octopus teacher',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZWZlODNlYWUtZjY2Ni00YzdiLTkwNmEtZmY5MmY1MDI0YWQyXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZWZlODNlYWUtZjY2Ni00YzdiLTkwNmEtZmY5MmY1MDI0YWQyXkEyXkFqcGdeQXVyNjEwNTM2Mzc@.jpg',
             'movie': 'My octopus teacher',
             'link': 'https://www.imdb.com/title/tt12888462',
             'category': OSCARS.categories[8]._id,
@@ -547,7 +547,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'TIME',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNmNjMTg5M2QtNTMxZS00ZjQxLWFjNTgtZTIxZTQ5OTI2NGJjXkEyXkFqcGdeQXVyODE0OTU5Nzg@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNmNjMTg5M2QtNTMxZS00ZjQxLWFjNTgtZTIxZTQ5OTI2NGJjXkEyXkFqcGdeQXVyODE0OTU5Nzg@.jpg',
             'movie': 'TIME',
             'link': 'https://www.imdb.com/title/tt11416746',
             'category': OSCARS.categories[8]._id,
@@ -556,7 +556,7 @@ async function initializeDatabase() {
         /** TENTH CATEGORY **/
         {
             'name': 'Colette',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTg5M2MxYzAtZjUwMi00MzRjLTkxNTItZmNjYzUxZjI3YzI3XkEyXkFqcGdeQXVyNDY2MjcyOTQ@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTg5M2MxYzAtZjUwMi00MzRjLTkxNTItZmNjYzUxZjI3YzI3XkEyXkFqcGdeQXVyNDY2MjcyOTQ@.jpg',
             'movie': 'Colette',
             'link': 'https://www.imdb.com/title/tt5437928',
             'category': OSCARS.categories[9]._id,
@@ -564,7 +564,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'A concerto is a conversation',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZDVjMjc3YzQtYmQ5MC00OTg0LWE3NTAtOTM5OGM4YTY5Mzc5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZDVjMjc3YzQtYmQ5MC00OTg0LWE3NTAtOTM5OGM4YTY5Mzc5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'A concerto is a conversation',
             'link': 'https://www.imdb.com/title/tt13793326l',
             'category': OSCARS.categories[9]._id,
@@ -572,7 +572,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Do not split',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMWE4MWRiMTEtMDBjMS00OTU0LTg5YjAtNDNiZTQxNDNlMTk5XkEyXkFqcGdeQXVyNTc0MDU0MDA@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMWE4MWRiMTEtMDBjMS00OTU0LTg5YjAtNDNiZTQxNDNlMTk5XkEyXkFqcGdeQXVyNTc0MDU0MDA@.jpg',
             'movie': 'Do not split',
             'link': 'https://www.imdb.com/title/tt11512676',
             'category': OSCARS.categories[9]._id,
@@ -580,7 +580,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Hunger ward',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYWFjNjlmMTAtNGIyYy00MTJiLWFlNTItYWIxODQ2OTA3ZTBjXkEyXkFqcGdeQXVyNzMxMTE1NA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYWFjNjlmMTAtNGIyYy00MTJiLWFlNTItYWIxODQ2OTA3ZTBjXkEyXkFqcGdeQXVyNzMxMTE1NA@@.jpg',
             'movie': 'Hunger ward',
             'link': 'https://www.imdb.com/title/tt12979636',
             'category': OSCARS.categories[9]._id,
@@ -588,7 +588,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'A Love Song for Latasha',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYzBlOGE3Y2QtMDMyZS00NTg2LTk1MzUtMmFhMTFmODBlNDc0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYzBlOGE3Y2QtMDMyZS00NTg2LTk1MzUtMmFhMTFmODBlNDc0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@.jpg',
             'movie': 'A Love Song for Latasha',
             'link': 'https://www.imdb.com/title/tt8993180',
             'category': OSCARS.categories[9]._id,
@@ -597,7 +597,7 @@ async function initializeDatabase() {
         /** ELEVENTH CATEGORY **/
         {
             'name': 'Yorgos Lamprinos',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'The Father',
             'link': 'https://www.imdb.com/name/nm0487166',
             'category': OSCARS.categories[10]._id,
@@ -605,7 +605,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Chloé Zhao',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/title/tt9770150',
             'category': OSCARS.categories[10]._id,
@@ -613,7 +613,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Frédéric Thoraval',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZDViMzBiNGMtZTIyNS00NzI4LWE3NDMtNmM1NDk0NzBlMWRlXkEyXkFqcGdeQXVyMTA2MDU0NjM5._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZDViMzBiNGMtZTIyNS00NzI4LWE3NDMtNmM1NDk0NzBlMWRlXkEyXkFqcGdeQXVyMTA2MDU0NjM5.jpg',
             'movie': 'Promising Young Woman',
             'link': 'https://www.imdb.com/name/nm1754850',
             'category': OSCARS.categories[10]._id,
@@ -621,7 +621,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Mikkel E. G. Nielsen',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@.jpg',
             'movie': 'Sound of metal',
             'link': 'https://www.imdb.com/name/nm1182055',
             'category': OSCARS.categories[10]._id,
@@ -629,7 +629,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The Trial of the Chicago 7',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.imdb.com/title/tt8993180',
             'category': OSCARS.categories[10]._id,
@@ -638,7 +638,7 @@ async function initializeDatabase() {
         /** TWELFTH CATEGORY**/
         {
             'name': 'Another Round (Denmark)',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNjM2Y2ZjgtMDc5NS00MDQ1LTgyNGYtYzYwMTAyNWQwYTMyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNjM2Y2ZjgtMDc5NS00MDQ1LTgyNGYtYzYwMTAyNWQwYTMyXkEyXkFqcGdeQXVyMjE4NzUxNDA@.jpg',
             'movie': 'Another Round (Denmark)',
             'link': 'https://www.imdb.com/title/tt10288566',
             'category': OSCARS.categories[11]._id,
@@ -646,7 +646,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Better Days (Hong Kong)',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMTlmNGY5OWQtZDU3OS00YTViLTk1M2QtZTc2ODBmY2Y2NTkzXkEyXkFqcGdeQXVyMTAyNzgyNjQ0._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMTlmNGY5OWQtZDU3OS00YTViLTk1M2QtZTc2ODBmY2Y2NTkzXkEyXkFqcGdeQXVyMTAyNzgyNjQ0.jpg',
             'movie': 'Better Days (Hong Kong)',
             'link': 'https://www.imdb.com/title/tt9586294',
             'category': OSCARS.categories[11]._id,
@@ -654,7 +654,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Collective (Romania)',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNDc5MTA2ZjgtOWU4OC00YjU4LTk3ZGUtYmMwZjRhODJiYTdiXkEyXkFqcGdeQXVyMTA2MDU0NjM5._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNDc5MTA2ZjgtOWU4OC00YjU4LTk3ZGUtYmMwZjRhODJiYTdiXkEyXkFqcGdeQXVyMTA2MDU0NjM5.jpg',
             'movie': 'Collective (Romania)',
             'link': 'https://www.imdb.com/title/tt10706602',
             'category': OSCARS.categories[11]._id,
@@ -662,7 +662,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The man who sold his skin (Tunisia)',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNhMzFmMWItYjcxNy00Nzk2LWI0YzEtMzM4OTFhMjg0NThlXkEyXkFqcGdeQXVyODc0OTEyNDU@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNhMzFmMWItYjcxNy00Nzk2LWI0YzEtMzM4OTFhMjg0NThlXkEyXkFqcGdeQXVyODc0OTEyNDU@.jpg',
             'movie': 'The man who sold his skin (Tunisia)',
             'link': 'https://www.imdb.com/title/tt10360862',
             'category': OSCARS.categories[11]._id,
@@ -670,7 +670,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Quo vadis, Aida? (Bosnia and Herzegovina)',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjMxMzAxMTUtNjY3Mi00MjZiLTgyYjMtNzAwZGI4YzViNGQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjMxMzAxMTUtNjY3Mi00MjZiLTgyYjMtNzAwZGI4YzViNGQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Quo vadis, Aida? (Bosnia and Herzegovina)',
             'link': 'https://www.imdb.com/title/tt8633462/',
             'category': OSCARS.categories[11]._id,
@@ -679,7 +679,7 @@ async function initializeDatabase() {
         /** THIRTEEN CATEGORY**/
         {
             'name': 'Marese Langan, Laura Allen and Claudia Stolze',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOGRiODEzM2QtOTUyYi00MWRlLTg4MzMtZGI0YmUzNWUyMjQ0XkEyXkFqcGdeQXVyMDA4NzMyOA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOGRiODEzM2QtOTUyYi00MWRlLTg4MzMtZGI0YmUzNWUyMjQ0XkEyXkFqcGdeQXVyMDA4NzMyOA@@.jpg',
             'movie': 'Emma.',
             'link': 'https://www.imdb.com/title/tt9214832/',
             'category': OSCARS.categories[12]._id,
@@ -687,7 +687,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Eryn Krueger Mekash, Matthew Mungle and Patricia Dehaney',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGI4NzRkNDgtYzQyOS00YWVjLTllYzctNmQ5NzkzOGIxMDBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGI4NzRkNDgtYzQyOS00YWVjLTllYzctNmQ5NzkzOGIxMDBhXkEyXkFqcGdeQXVyODE5NzE3OTE@.jpg',
             'movie': 'Hillbilly Elegy',
             'link': 'https://www.imdb.com/title/tt6772802/',
             'category': OSCARS.categories[12]._id,
@@ -695,7 +695,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Sergio Lopez-Rivera, Mia Neal and Jamika Wilson',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/title/tt10514222',
             'category': OSCARS.categories[12]._id,
@@ -703,7 +703,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Gigi Williams, Kimberley Spiteri and Colleen LaBaff',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNhMzFmMWItYjcxNy00Nzk2LWI0YzEtMzM4OTFhMjg0NThlXkEyXkFqcGdeQXVyODc0OTEyNDU@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNhMzFmMWItYjcxNy00Nzk2LWI0YzEtMzM4OTFhMjg0NThlXkEyXkFqcGdeQXVyODc0OTEyNDU@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10360862',
             'category': OSCARS.categories[12]._id,
@@ -711,7 +711,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Mark Coulier, Dalia Colli and Francesco Pegoretti',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNzgxNWJiOWQtZDA5Mi00NjBkLWIxMzUtZTg3Yjk5NjYyMDZjXkEyXkFqcGdeQXVyMDA4NzMyOA@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNzgxNWJiOWQtZDA5Mi00NjBkLWIxMzUtZTg3Yjk5NjYyMDZjXkEyXkFqcGdeQXVyMDA4NzMyOA@@.jpg',
             'movie': 'Pinocchio',
             'link': 'https://www.imdb.com/title/tt8333746/',
             'category': OSCARS.categories[12]._id,
@@ -720,7 +720,7 @@ async function initializeDatabase() {
         /** FOURTEENTH CATEGORY **/
         {
             'name': 'Terence Blanchard',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjE4ODEwNzktYjg5Yi00N2YxLWExMmEtMmQyZTBiYWI4MGQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjE4ODEwNzktYjg5Yi00N2YxLWExMmEtMmQyZTBiYWI4MGQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2.jpg',
             'movie': 'Da 5 Bloods',
             'link': 'https://www.imdb.com/name/nm0005966',
             'category': OSCARS.categories[13]._id,
@@ -728,7 +728,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Trent Reznor and Atticus Ross',
-            'pic': 'https://www.goldenglobes.com/sites/default/files/styles/portrait_medium/public/2021_movies/Mank.jpg?format=pjpg&auto=webp&optimize=high',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/name/nm0722153/',
             'category': OSCARS.categories[13]._id,
@@ -736,7 +736,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Emile Mosseri',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4.jpg',
             'movie': 'Minari',
             'link': 'https://www.imdb.com/name/nm7888676',
             'category': OSCARS.categories[13]._id,
@@ -744,7 +744,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'James Newton Howard',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'News of the World',
             'link': 'https://www.imdb.com/name/nm0006133',
             'category': OSCARS.categories[13]._id,
@@ -752,7 +752,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Trent Reznor, Atticus Ross and Jon Batiste',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@.jpg',
             'movie': 'Soul',
             'link': 'https://www.imdb.com/name/nm4456022',
             'category': OSCARS.categories[13]._id,
@@ -761,7 +761,7 @@ async function initializeDatabase() {
         /** FIFTEEN CATEGORY**/
         {
             'name': 'Fight For You - H.E.R., Dernst Emile II and Tiara Thomas',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@.jpg',
             'movie': 'Judas and the Black Messiah',
             'link': 'https://www.youtube.com/watch?v=exJq2NrAwdc',
             'category': OSCARS.categories[14]._id,
@@ -769,7 +769,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Hear My Voice - Daniel Pemberton and Celeste',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.youtube.com/watch?v=pnY9_DXMBis',
             'category': OSCARS.categories[14]._id,
@@ -777,7 +777,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Husavik - Savan Kotecha, Fat Max Gsus and Rickard Göransson',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYzRjYzA5NTQtOTE3MC00OTYzLWEzODItMzQxYWE1NDJkMDA0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYzRjYzA5NTQtOTE3MC00OTYzLWEzODItMzQxYWE1NDJkMDA0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Eurovision Song Contest: The Story of Fire Saga',
             'link': 'https://www.youtube.com/watch?v=qjuphuG3ndw',
             'category': OSCARS.categories[14]._id,
@@ -785,7 +785,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The lo Sì (Seen) - Laura Pausini and Diane Warren',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BODAxNzZmNTktMGI3Ny00MDM4LWI3MmYtNWUwZThhNWQxMWU4XkEyXkFqcGdeQXVyMTE5MTkxMDI2._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BODAxNzZmNTktMGI3Ny00MDM4LWI3MmYtNWUwZThhNWQxMWU4XkEyXkFqcGdeQXVyMTE5MTkxMDI2.jpg',
             'movie': 'Life Ahead',
             'link': 'https://www.youtube.com/watch?v=imjSm7FNmwE',
             'category': OSCARS.categories[14]._id,
@@ -793,7 +793,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Speak Now - Leslie Odom Jr. and Sam Ashworth',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYmJlYWQ0NWMtMzU5Ni00MDNhLTk2YmUtYWYzZTJhMDMxMzE0XkEyXkFqcGdeQXVyODE0OTU5Nzg@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYmJlYWQ0NWMtMzU5Ni00MDNhLTk2YmUtYWYzZTJhMDMxMzE0XkEyXkFqcGdeQXVyODE0OTU5Nzg@.jpg',
             'movie': 'One Night in Miami…',
             'link': 'https://www.youtube.com/watch?v=1vAvQ9Um8hQ',
             'category': OSCARS.categories[14]._id,
@@ -802,7 +802,7 @@ async function initializeDatabase() {
         /** SIXTEEN CATEGORY **/
         {
             'name': 'The Father',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'The Father',
             'link': 'https://www.imdb.com/title/tt10272386',
             'category': OSCARS.categories[15]._id,
@@ -810,7 +810,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Judas and the Black Messiah',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@.jpg',
             'movie': 'Judas and the Black Messiah',
             'link': 'https://www.imdb.com/title/tt9784798/',
             'category': OSCARS.categories[15]._id,
@@ -818,7 +818,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Mank',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10618286',
             'category': OSCARS.categories[15]._id,
@@ -826,7 +826,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Minari',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4._UX297.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4.jpg',
             'movie': 'Minari',
             'link': 'https://www.imdb.com/title/tt10633456',
             'category': OSCARS.categories[15]._id,
@@ -834,7 +834,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Nomadland',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX100_CR0,1,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/title/tt9620292',
             'category': OSCARS.categories[15]._id,
@@ -842,7 +842,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Promising Young Woman',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZDViMzBiNGMtZTIyNS00NzI4LWE3NDMtNmM1NDk0NzBlMWRlXkEyXkFqcGdeQXVyMTA2MDU0NjM5._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZDViMzBiNGMtZTIyNS00NzI4LWE3NDMtNmM1NDk0NzBlMWRlXkEyXkFqcGdeQXVyMTA2MDU0NjM5.jpg',
             'movie': 'Promising Young Woman',
             'link': 'https://www.imdb.com/title/tt9770150',
             'category': OSCARS.categories[15]._id,
@@ -850,7 +850,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Sound of Metal',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@.jpg',
             'movie': 'Sound of Metal',
             'link': 'https://www.imdb.com/title/tt5363618',
             'category': OSCARS.categories[15]._id,
@@ -858,7 +858,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The Trial of the Chicago 7',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.imdb.com/title/tt1070874',
             'category': OSCARS.categories[15]._id,
@@ -867,7 +867,7 @@ async function initializeDatabase() {
         /** SEVENTEEN CATEGORY **/
         {
             'name': 'Peter Francis and Cathy Featherstone',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'The Father',
             'link': 'https://www.imdb.com/title/tt10272386',
             'category': OSCARS.categories[16]._id,
@@ -875,7 +875,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Ma Rainey\'s Black Bottom',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/title/tt10514222',
             'category': OSCARS.categories[16]._id,
@@ -883,7 +883,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Mark Ricker, Karen O\'Hara and Diana Stoughton',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10618286',
             'category': OSCARS.categories[16]._id,
@@ -891,7 +891,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'David Crank and Elizabeth Keenan',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'News of the World',
             'link': 'https://www.imdb.com/title/tt10618286',
             'category': OSCARS.categories[16]._id,
@@ -899,7 +899,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Nathan Crowley and Kathy Lucas',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_QL75_UX100_CR0,1,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy.jpg',
             'movie': 'TENET',
             'link': 'https://www.imdb.com/title/tt6723592',
             'category': OSCARS.categories[16]._id,
@@ -908,7 +908,7 @@ async function initializeDatabase() {
         /** EIGHTEEN CATEGORY **/
         {
             'name': 'Burrow',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOGM3OTA4NWUtZGUwMy00NzYxLThiYjUtNTMyMjMwNmIzZTE0XkEyXkFqcGdeQXVyNzM0MDQ1Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOGM3OTA4NWUtZGUwMy00NzYxLThiYjUtNTMyMjMwNmIzZTE0XkEyXkFqcGdeQXVyNzM0MDQ1Mw@@.jpg',
             'movie': 'Burrow',
             'link': 'https://www.imdb.com/title/tt13167288',
             'category': OSCARS.categories[17]._id,
@@ -916,7 +916,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Genius Loci',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTEyOGM5ODYtNzU0Yy00MWM3LWI5YmYtYjc0NjUwMTQyYmJmXkEyXkFqcGdeQXVyNjE4OTU2MzY@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTEyOGM5ODYtNzU0Yy00MWM3LWI5YmYtYjc0NjUwMTQyYmJmXkEyXkFqcGdeQXVyNjE4OTU2MzY@.jpg',
             'movie': 'Genius Loci',
             'link': 'https://www.imdb.com/title/tt11884670/',
             'category': OSCARS.categories[17]._id,
@@ -924,7 +924,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'If Anything Happens I Love You',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGI5OTU4MWQtMDE4ZS00ZWViLTk2OTItMmU5ZmRlNzg1N2Y5XkEyXkFqcGdeQXVyMzc3MTE2Mzg@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGI5OTU4MWQtMDE4ZS00ZWViLTk2OTItMmU5ZmRlNzg1N2Y5XkEyXkFqcGdeQXVyMzc3MTE2Mzg@.jpg',
             'movie': 'If Anything Happens I Love You',
             'link': 'https://www.imdb.com/title/tt11768948/',
             'category': OSCARS.categories[17]._id,
@@ -940,7 +940,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Yes-People',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjY2ZjE4YjMtODM1OC00MWJmLWFkN2EtZjJhMmQ1YTc5MjlmXkEyXkFqcGdeQXVyNjE4OTU2MzY@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjY2ZjE4YjMtODM1OC00MWJmLWFkN2EtZjJhMmQ1YTc5MjlmXkEyXkFqcGdeQXVyNjE4OTU2MzY@.jpg',
             'movie': 'Yes-People',
             'link': 'https://www.imdb.com/title/tt12706728/',
             'category': OSCARS.categories[17]._id,
@@ -949,7 +949,7 @@ async function initializeDatabase() {
         /** NINETEEN CATEGORY **/
         {
             'name': 'Feeling through',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNGY2ZGZhYmQtYjc5My00NWI5LTk5YjgtOTAyYmNlMzU3ZWRjXkEyXkFqcGdeQXVyMjEyMTYwMjk@._V1_UY268_CR16,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNGY2ZGZhYmQtYjc5My00NWI5LTk5YjgtOTAyYmNlMzU3ZWRjXkEyXkFqcGdeQXVyMjEyMTYwMjk@.jpg',
             'movie': 'Feeling through',
             'link': 'https://www.imdb.com/title/tt9280166',
             'category': OSCARS.categories[18]._id,
@@ -957,7 +957,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The Letter Room',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTBhNDFiNjItZDM3Ni00N2Y0LWE4NjMtMzBiNDc3MjA2ZmFiXkEyXkFqcGdeQXVyMTE2NzYxNDcz._V1_UY268_CR6,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTBhNDFiNjItZDM3Ni00N2Y0LWE4NjMtMzBiNDc3MjA2ZmFiXkEyXkFqcGdeQXVyMTE2NzYxNDcz.jpg',
             'movie': 'The Letter Room',
             'link': 'https://www.imdb.com/title/tt11962160/',
             'category': OSCARS.categories[18]._id,
@@ -965,7 +965,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'The Present',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNTM2ZWQ3NzktNDY4MS00YzhmLWI0YTktYjUzNDljZDA0M2FmXkEyXkFqcGdeQXVyNjYxMDQwOTI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNTM2ZWQ3NzktNDY4MS00YzhmLWI0YTktYjUzNDljZDA0M2FmXkEyXkFqcGdeQXVyNjYxMDQwOTI@.jpg',
             'movie': 'The Present',
             'link': 'https://www.imdb.com/title/tt11474480/',
             'category': OSCARS.categories[18]._id,
@@ -973,7 +973,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Two Distant Strangers',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjBlZTVhYzItOTdjOS00YWY0LWE3NzQtZTc5MjRkY2RjMDM5XkEyXkFqcGdeQXVyNTU5NjE4OTY@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjBlZTVhYzItOTdjOS00YWY0LWE3NzQtZTc5MjRkY2RjMDM5XkEyXkFqcGdeQXVyNTU5NjE4OTY@.jpg',
             'movie': 'Two Distant Strangers',
             'link': 'https://www.imdb.com/title/tt13472984/',
             'category': OSCARS.categories[18]._id,
@@ -981,7 +981,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'White Eye',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNmU4Zjg3MGYtMTg2OS00MWE1LWFjYTEtYWRkMmJkZjFhODk1XkEyXkFqcGdeQXVyNzMzOTUyNTY@._V1_UY268_CR3,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNmU4Zjg3MGYtMTg2OS00MWE1LWFjYTEtYWRkMmJkZjFhODk1XkEyXkFqcGdeQXVyNzMzOTUyNTY@.jpg',
             'movie': 'White Eye',
             'link': 'https://www.imdb.com/title/tt10538710/',
             'category': OSCARS.categories[18]._id,
@@ -990,7 +990,7 @@ async function initializeDatabase() {
         /** TWENTIETH CATEGORY **/
         {
             'name': 'Warren Shaw, Michael Minkler, Beau Borders and David Wyman',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTFkZjYxNWItZmE2MC00MGE4LWIxYTgtZmIzOWM1YmI2YWEzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTFkZjYxNWItZmE2MC00MGE4LWIxYTgtZmIzOWM1YmI2YWEzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Greyhound',
             'link': 'https://www.imdb.com/title/tt6048922',
             'category': OSCARS.categories[19]._id,
@@ -998,7 +998,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Ren Klyce, Jeremy Molod, David Parker, Nathan Nance and Drew Kunin',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10618286/',
             'category': OSCARS.categories[19]._id,
@@ -1006,7 +1006,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Oliver Tarney, Mike Prestwood Smith, William Miller and John Pritchett',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'News of the World',
             'link': 'https://www.imdb.com/name/nm0006133',
             'category': OSCARS.categories[19]._id,
@@ -1014,7 +1014,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Ren Klyce, Coya Elliott and David Parker',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@.jpg',
             'movie': 'Soul',
             'link': 'https://www.imdb.com/title/tt2948372',
             'category': OSCARS.categories[19]._id,
@@ -1022,7 +1022,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Nicolas Becker, Jaime Baksht, Michelle Couttolenc, Carlos Cortés and Phillip Bladh',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@.jpg',
             'movie': 'Sound of Metal',
             'link': 'https://www.imdb.com/name/nm4456022',
             'category': OSCARS.categories[19]._id,
@@ -1031,7 +1031,7 @@ async function initializeDatabase() {
         /** TWENTY-FIRST CATEGORY **/
         {
             'name': 'Matt Sloan, Genevieve Camilleri, Matt Everitt and Brian Cox',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYWVkMWEyMDUtZTVmOC00MTYxLWE1ZTUtNjk4M2IzMjY2OTIxXkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_QL75_UX100_CR0,1,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYWVkMWEyMDUtZTVmOC00MTYxLWE1ZTUtNjk4M2IzMjY2OTIxXkEyXkFqcGdeQXVyMDk5Mzc5MQ@@.jpg',
             'movie': 'Love and Monsters',
             'link': 'https://www.imdb.com/title/tt2222042?ref_=nv_sr_srsg_0',
             'category': OSCARS.categories[20]._id,
@@ -1039,7 +1039,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Matthew Kasmir, Christopher Lawrence, Max Solomon and David Watkins',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNDQwYjJjODMtOWNmNC00NDJjLThiNDgtNzVkOTM1MjY5NDQ5XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNDQwYjJjODMtOWNmNC00NDJjLThiNDgtNzVkOTM1MjY5NDQ5XkEyXkFqcGdeQXVyMTEyMjM2NDc2.jpg',
             'movie': 'The Midnight Sky',
             'link': 'https://www.imdb.com/name/nm10827638',
             'category': OSCARS.categories[20]._id,
@@ -1047,7 +1047,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Sean Faden, Anders Langlands, Seth Maury and Steve Ingram',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@.jpg',
             'movie': 'Mulan',
             'link': 'https://www.imdb.com/title/tt4566758/',
             'category': OSCARS.categories[20]._id,
@@ -1055,7 +1055,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Nick Davis, Greg Fisher, Ben Jones and Santiago Colomo Martinez',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZWY3OTNhNWUtMDk2My00ZGVhLWE5ODQtM2NkOTZiMWM2MGY2XkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZWY3OTNhNWUtMDk2My00ZGVhLWE5ODQtM2NkOTZiMWM2MGY2XkEyXkFqcGdeQXVyNjMwMzc3MjE@.jpg',
             'movie': 'The One and Only Ivan',
             'link': 'https://www.imdb.com/title/tt3661394?ref_=nv_sr_srsg_2',
             'category': OSCARS.categories[20]._id,
@@ -1063,7 +1063,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Andrew Jackson, David Lee, Andrew Lockley and Scott Fisher',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_QL75_UX100_CR0,1,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy.jpg',
             'movie': 'Tenet',
             'link': 'https://www.imdb.com/title/tt6723592?ref_=nv_sr_srsg_0',
             'category': OSCARS.categories[20]._id,
@@ -1072,7 +1072,7 @@ async function initializeDatabase() {
         /** TWENTY-SECOND CATEGORY **/
         {
             'name': ' Sacha Baron Cohen, Anthony Hines and Dan Swimer',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNmY3OTdkOWEtNjc2ZC00OTZmLWI5OWItMjdjYjRkNTExNDNhXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNmY3OTdkOWEtNjc2ZC00OTZmLWI5OWItMjdjYjRkNTExNDNhXkEyXkFqcGdeQXVyMjkwOTAyMDU@.jpg',
             'movie': 'Borat Subsequent Moviefilm',
             'link': 'https://www.imdb.com/name/nm0056187',
             'category': OSCARS.categories[21]._id,
@@ -1080,7 +1080,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Christopher Hampton and Florian Zeller',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'The Father',
             'link': 'https://www.imdb.com/name/nm0358960',
             'category': OSCARS.categories[21]._id,
@@ -1088,7 +1088,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Chloé Zhao',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX100_CR0,1,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@.jpg',
             'movie': 'Nomadland',
             'link': 'https://www.imdb.com/name/nm2125482',
             'category': OSCARS.categories[21]._id,
@@ -1096,7 +1096,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Kemp Powers',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYmJlYWQ0NWMtMzU5Ni00MDNhLTk2YmUtYWYzZTJhMDMxMzE0XkEyXkFqcGdeQXVyODE0OTU5Nzg@._V1_QL75_UY148_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYmJlYWQ0NWMtMzU5Ni00MDNhLTk2YmUtYWYzZTJhMDMxMzE0XkEyXkFqcGdeQXVyODE0OTU5Nzg@.jpg',
             'movie': 'One Night in Miami',
             'link': 'https://www.imdb.com/name/nm5358492',
             'category': OSCARS.categories[21]._id,
@@ -1104,7 +1104,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Ramin Bahrani',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BMDVkMDRkMzItN2EyYS00ZTI5LTljYzgtNzRmZDQ0OTQ3M2VjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BMDVkMDRkMzItN2EyYS00ZTI5LTljYzgtNzRmZDQ0OTQ3M2VjXkEyXkFqcGdeQXVyODk4OTc3MTY@.jpg',
             'movie': 'The White Tiger',
             'link': 'https://www.imdb.com/name/nm1023919',
             'category': OSCARS.categories[21]._id,
@@ -1113,7 +1113,7 @@ async function initializeDatabase() {
         /** TWENTY-THIRD CATEGORY **/
         {
             'name': 'Will Berson & Shaka King',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_QL75_UX100_CR0,2,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@.jpg',
             'movie': 'Judas and the Black Messiah',
             'link': 'https://www.imdb.com/name/nm0077768',
             'category': OSCARS.categories[22]._id,
@@ -1121,7 +1121,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Lee Isaac Chung',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4._V1_QL75_UY148_CR1,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4.jpg',
             'movie': 'Mimari',
             'link': 'https://www.imdb.com/name/nm1818032',
             'category': OSCARS.categories[22]._id,
@@ -1129,7 +1129,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Emerald Fennell',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BZDViMzBiNGMtZTIyNS00NzI4LWE3NDMtNmM1NDk0NzBlMWRlXkEyXkFqcGdeQXVyMTA2MDU0NjM5._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZDViMzBiNGMtZTIyNS00NzI4LWE3NDMtNmM1NDk0NzBlMWRlXkEyXkFqcGdeQXVyMTA2MDU0NjM5.jpg',
             'movie': 'Promising Young Woman',
             'link': 'https://www.imdb.com/name/nm2193504',
             'category': OSCARS.categories[22]._id,
@@ -1137,15 +1137,15 @@ async function initializeDatabase() {
         },
         {
             'name': 'Darius Marder, Abraham Marder and Derek Cianfrance',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@.jpg',
             'movie': 'The Father',
-            'link': 'https://m.media-amazon.com/images/M/MV5BYTllZDJlNjEtYmI2OC00NWRiLTg5YjMtYzU3OWI3ZTU1YmVhXkEyXkFqcGdeQXVyNTg0NTIyMjI@._V1_QL75_UY148_CR61,0,100,148_.jpg',
+            'link': 'https://m.media-amazon.com/images/M/MV5BYTllZDJlNjEtYmI2OC00NWRiLTg5YjMtYzU3OWI3ZTU1YmVhXkEyXkFqcGdeQXVyNTg0NTIyMjI@.jpg',
             'category': OSCARS.categories[22]._id,
             'awardEvent': OSCARS._id,
         },
         {
             'name': 'Aaron Sorkin',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.imdb.com/name/nm0815070',
             'category': OSCARS.categories[22]._id,
