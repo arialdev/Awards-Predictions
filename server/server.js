@@ -244,7 +244,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Leslie Odom Jr.',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BODU4ZjgzNTUtY2Y2Yy00ZTA2LWI4ZGUtNjQxMzRhNmIzYjlhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@.jpg',
+            'pic': 'https://www.gannett-cdn.com/presto/2018/09/04/PCIN/f62e816f-5d0d-4503-b97c-40de763e2d75-LOJ_1_1.jpg',
             'movie': 'One Night in Miami...',
             'link': 'https://www.imdb.com/name/nm0705152',
             'category': OSCARS.categories[1]._id,
@@ -628,7 +628,7 @@ async function initializeDatabase() {
             'awardEvent': OSCARS._id,
         },
         {
-            'name': 'The Trial of the Chicago 7',
+            'name': 'Alan Baumgarten',
             'pic': 'https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'The Trial of the Chicago 7',
             'link': 'https://www.imdb.com/title/tt8993180',
@@ -703,7 +703,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Gigi Williams, Kimberley Spiteri and Colleen LaBaff',
-            'pic': 'https://m.media-amazon.com/images/M/MV5BOTNhMzFmMWItYjcxNy00Nzk2LWI0YzEtMzM4OTFhMjg0NThlXkEyXkFqcGdeQXVyODc0OTEyNDU@.jpg',
+            'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10360862',
             'category': OSCARS.categories[12]._id,
@@ -874,7 +874,7 @@ async function initializeDatabase() {
             'awardEvent': OSCARS._id,
         },
         {
-            'name': 'Ma Rainey\'s Black Bottom',
+            'name': 'Mark Ricker, Karen O\'Hara and Diana Stoughton',
             'pic': 'https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Ma Rainey\'s Black Bottom',
             'link': 'https://www.imdb.com/title/tt10514222',
@@ -882,7 +882,7 @@ async function initializeDatabase() {
             'awardEvent': OSCARS._id,
         },
         {
-            'name': 'Mark Ricker, Karen O\'Hara and Diana Stoughton',
+            'name': 'Donald Graham Burt and Jan Pascale',
             'pic': 'https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@.jpg',
             'movie': 'Mank',
             'link': 'https://www.imdb.com/title/tt10618286',
@@ -900,7 +900,7 @@ async function initializeDatabase() {
         {
             'name': 'Nathan Crowley and Kathy Lucas',
             'pic': 'https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy.jpg',
-            'movie': 'TENET',
+            'movie': 'Tenet',
             'link': 'https://www.imdb.com/title/tt6723592',
             'category': OSCARS.categories[16]._id,
             'awardEvent': OSCARS._id,
