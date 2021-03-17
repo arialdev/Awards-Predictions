@@ -8,7 +8,8 @@
     <a id="support" href="https://paypal.me/Varo412/1,50" rel="author" target="_blank" class="me-lg-5 me-sm-2 me-0"
        data-bs-toggle="tooltip" data-bs-placement="left" title="Support this app">
       <img src="../assets/images/flame-128.png" alt="logo" width="40"
-           class="d-inline-block align-top">
+           class="d-inline-block align-top" [@beat]="beating? state : ''"
+           (@beat.done)="onLoop()">
     </a>
   </div>
 </nav>
@@ -17,13 +18,12 @@
 <div id="content-container" class="container-fluid d-inline-flex align-items-center">
   <div class="row w-100 justify-content-center m-auto">
     <div class="col col-lg-10">
-            <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
       <div *ngIf="spin.spinning">
         <div class="d-flex justify-content-center">
           <div class="spinner spinner-border text-warning" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
-
         </div>
         <p class="spinner-text no-select mt-3">{{spin.text}}</p>
       </div>

@@ -11,7 +11,6 @@ export class VoteService {
 
   private serverURL = `${environment.serverURI}/votes`;
   private _votes;
-  private votesPicture = null;
 
   constructor(private http: HttpClient, private userService: UserService) {
   }
@@ -39,5 +38,4 @@ export class VoteService {
       headers
     });
   }
-
 }
