@@ -1,20 +1,26 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, OnDestroy} from '@angular/core';
 import {UserService} from '../../services/user.service';
 import {Router} from '@angular/router';
 import {VoteService} from '../../services/vote.service';
 import {SpinnerService} from '../../services/spinner.service';
+import {AppComponent} from '../../app.component';
 
 @Component({
   selector: 'app-votes-result',
   templateUrl: './votes-result.component.html',
   styleUrls: ['./votes-result.component.css']
 })
-export class VotesResultComponent implements OnInit {
+export class VotesResultComponent implements OnInit, OnDestroy {
 
   image: any;
   isImageLoading = true;
 
-  constructor(private userService: UserService, private voteService: VoteService, public router: Router) {
+  constructor(private appComponent: AppComponent, private userService: UserService, private voteService: VoteService,
+              public router: Router) {
+  }
+
+  ngOnDestroy(): void {
+    this.appComponent.beating = false;
   }
 
   async ngOnInit(): Promise<void> {
@@ -34,6 +40,7 @@ export class VotesResultComponent implements OnInit {
         console.log('Correcto');
         this.createImageFromBlob(pic);
         this.isImageLoading = false;
+        this.appComponent.beating = true;
       },
       (err) => {
         this.isImageLoading = false;

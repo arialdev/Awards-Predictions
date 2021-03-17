@@ -16,7 +16,6 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
     trigger('invalidName', [
       state('open', style({
         backgroundColor: '#ff4747',
-
       })),
       state('closed', style({
         backgroundColor: 'white',
@@ -37,7 +36,8 @@ export class RegisterComponent implements OnInit {
   failedInput = false;
 
   constructor(
-    private userService: UserService, private awardEventService: AwardEventService,
+    private userService: UserService,
+    private awardEventService: AwardEventService,
     private router: Router) {
   }
 
