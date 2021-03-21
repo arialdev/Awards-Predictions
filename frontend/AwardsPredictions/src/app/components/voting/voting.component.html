@@ -10,8 +10,9 @@
     <div class="col mx-2" *ngFor="let nominee of category.nominees; index as j" style="min-width: 200px;">
       <div class="card h-100" [class.selected]="this.votes[i] ===j" (click)="onNomineeSelected(i,j)">
         <img
-          src="{{nominee.pic==='#'? this.defaultPic : nominee.pic}}"
+          src="{{nomineePictures[i][j]}}"
           class="card-img-top" alt="{{nominee.name}} picture">
+
         <div class="card-body">
           <h5 class="card-title">{{nominee.name}}</h5>
           <p class="card-text mt-auto" *ngIf="nominee.name!==nominee.movie">{{nominee.movie}}</p>

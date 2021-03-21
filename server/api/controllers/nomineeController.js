@@ -1,7 +1,6 @@
 'use strict';
 const mongoose = require('mongoose');
 const Category = mongoose.model('Categories');
-const Award = mongoose.model('AwardEvents');
 const Nominee = mongoose.model('Nominees');
 
 exports.createNominee = async function (req, res) {
@@ -31,4 +30,29 @@ exports.getNominee = function (req, res) {
             return res.status(404).send();
         return res.json(nominee);
     });
+};
+
+exports.getNomineePicture = async function (req, res) {
+    try {
+        const nominee = await Nominee.findById(req.params.nomineeId);
+        if (!nominee) return res.status(404).json({message: 'Nominee not found'});
+        let a = nominee.pic;
+        const options = {
+            dotfiles: 'deny',
+            headers: {
+                'x-timestamp': Date.now(),
+                'x-sent': true,
+            }
+        }
+        res.sendFile((nominee.pic == "#") ? `${appRoot}/assets/data/nominees/no-picture.jpg` : nominee.pic,
+            options, function (error) {
+                if (error) {
+                    console.error("An error ocurren when sending data".bgRed, error);
+                    res.status(500).json({message: 'Something went wrong at sending the nominee picture', error});
+                }
+            })
+
+    } catch (e) {
+        return res.status(500).send();
+    }
 };

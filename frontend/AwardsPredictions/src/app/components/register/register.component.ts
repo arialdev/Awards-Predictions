@@ -30,7 +30,7 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
   ],
 })
 
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
   public username: string;
   private redirectRoute: string = null;
   failedInput = false;
@@ -39,20 +39,6 @@ export class RegisterComponent implements OnInit {
     private userService: UserService,
     private awardEventService: AwardEventService,
     private router: Router) {
-  }
-
-  ngOnInit(): void {
-    // this remains until AwardEventSelection component is created
-    this.awardEventService.getAwardEventByNameAndEdition('Oscars', 93).subscribe(
-      (award: AwardEvent) => {
-        this.redirectRoute = `/voting/${award.name}&${award.edition}`;
-      },
-      (err) => {
-        // redirect to home page
-        console.error(err);
-        this.redirectRoute = '/';
-      }
-    );
   }
 
   onUsernameSubmit(): void {
@@ -67,7 +53,20 @@ export class RegisterComponent implements OnInit {
       this.userService.registerUser(this.username).subscribe(
         (user: User) => {
           this.userService.user = user;
-          this.router.navigate([this.redirectRoute]);
+
+          // this remains until AwardEventSelection component is created
+          this.awardEventService.getAwardEventByNameAndEdition('Oscars', 93).subscribe(
+            (award: AwardEvent) => {
+              this.redirectRoute = `/voting/${award.name}&${award.edition}`;
+              this.router.navigate([this.redirectRoute]);
+            },
+            (err) => {
+              // redirect to home page
+              console.error(err);
+              this.redirectRoute = '/';
+              this.router.navigate([this.redirectRoute]);
+            }
+          );
         },
         err => console.error(err)
       );

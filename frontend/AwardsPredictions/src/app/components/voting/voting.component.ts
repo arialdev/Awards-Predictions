@@ -5,6 +5,7 @@ import {VoteService} from '../../services/vote.service';
 import {UserService} from '../../services/user.service';
 import {AwardEvent} from '../../interfaces/award-event';
 import {SpinnerService} from '../../services/spinner.service';
+import {NomineeService} from '../../services/nominee.service';
 
 @Component({
   selector: 'app-voting',
@@ -16,13 +17,16 @@ export class VotingComponent implements OnInit {
   awardEvent: AwardEvent;
   votes: number [];
   defaultPic = '/assets/images/no-picture.jpg';
+  nomineePictures;
+  loadingCounter = 0;
 
   constructor(
     private awardEventService: AwardEventService,
     private voteService: VoteService,
     private userService: UserService,
     public router: Router,
-    public route: ActivatedRoute) {
+    public route: ActivatedRoute,
+    private nomineeService: NomineeService) {
   }
 
   async ngOnInit(): Promise<void> {
@@ -33,8 +37,23 @@ export class VotingComponent implements OnInit {
     const awardEventParams = decodeURI(this.router.url).split('/')[2].split('&');
     this.awardEventService.getAwardEventByNameAndEdition(awardEventParams[0], parseInt(awardEventParams[1], 10)).subscribe(
       (award: AwardEvent) => {
+        award.categories.forEach((cat, i) => {
+          cat.nominees.forEach((nom, j) => {
+            nom.pic = '';
+            this.nomineeService.getNomineePicture(nom._id).subscribe(
+              (pic) => {
+                this.createImageFromBlob(pic, i, j);
+              }
+            );
+          });
+        });
         this.awardEvent = award;
+        this.nomineePictures = new Array(award.categories);
+        for (let i = 0; i < award.categories.length; i++) {
+          this.nomineePictures[i] = new Array(award.categories[i].nominees.length);
+        }
         this.votes = new Array<number>(award.categories.length);
+
       },
       (error) => {
         console.error(error);
@@ -57,7 +76,6 @@ export class VotingComponent implements OnInit {
       };
       nominees.push(vote);
     });
-
 
     this.voteService.sendVotes(this.awardEvent._id, nominees).subscribe(
       () => {
@@ -99,6 +117,18 @@ export class VotingComponent implements OnInit {
         return `rd`;
       default:
         return `th`;
+    }
+  }
+
+  private createImageFromBlob(image: Blob, cat: number, nom: number): void {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+      this.nomineePictures[cat][nom] = reader.result;
+      this.loadingCounter++;
+    }, false);
+
+    if (image) {
+      reader.readAsDataURL(image);
     }
   }
 }

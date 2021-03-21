@@ -4,7 +4,6 @@ const Vote = mongoose.model('Votes');
 const User = mongoose.model('Users');
 const Award = mongoose.model('AwardEvents');
 const Jimp = require('jimp');
-const path = require("path");
 const fs = require('fs')
 
 const pictureRoute = `${appRoot}/assets/23i_render-template.jpg`;
@@ -159,9 +158,7 @@ async function renderer(data, username) {
                         if (matrix[c][r].voted.pic === '#') {
                             thumbnail = await Jimp.read(BLANK_THUMBNAIL);
                         } else {
-                            thumbnail = await Jimp.read({
-                                url: matrix[c][r].voted.pic
-                            });
+                            thumbnail = await Jimp.read(matrix[c][r].voted.pic);
                         }
                         if (thumbnail) await thumbnail.scaleToFit(THUMBNAIL_W, THUMBNAIL_H, Jimp.HORIZONTAL_ALIGN_CENTER)
                         await pic.composite(thumbnail, X_POSITION, Y_POSITION);

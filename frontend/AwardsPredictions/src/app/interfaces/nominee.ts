@@ -4,7 +4,7 @@ import {AwardEvent} from './award-event';
 export interface Nominee {
   _id: string;
   name: string;
-  pic: string;
+  pic: string | ArrayBuffer;
   movie: string;
   link: string;
   category: Category;
