@@ -39,7 +39,6 @@ export class VotingComponent implements OnInit {
       (award: AwardEvent) => {
         award.categories.forEach((cat, i) => {
           cat.nominees.forEach((nom, j) => {
-            nom.pic = '';
             this.nomineeService.getNomineePicture(nom._id).subscribe(
               (pic) => {
                 this.createImageFromBlob(pic, i, j);
