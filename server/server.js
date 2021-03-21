@@ -564,9 +564,9 @@ async function initializeDatabase() {
             'awardEvent': OSCARS._id,
         },
         {
-            'name': 'A Concerto Is A Conversation',
-            'pic': `${appRoot}/assets/data/nominees/movies/A Concerto Is A Conversation.jpg`,
-            'movie': 'A Concerto Is A Conversation',
+            'name': 'A Concerto is a Conversation',
+            'pic': `${appRoot}/assets/data/nominees/movies/A Concerto is a Conversation.jpg`,
+            'movie': 'A Concerto is a Conversation',
             'link': 'https://www.imdb.com/title/tt13793326l',
             'category': OSCARS.categories[9]._id,
             'awardEvent': OSCARS._id,
