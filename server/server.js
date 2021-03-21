@@ -533,7 +533,7 @@ async function initializeDatabase() {
         {
             'name': 'The Mole Agent',
             'pic': `${appRoot}/assets/data/nominees/movies/The Mole Agent.jpg`,
-            'movie': 'The mole Agent',
+            'movie': 'The Mole Agent',
             'link': 'https://www.imdb.com/title/tt11394298',
             'category': OSCARS.categories[8]._id,
             'awardEvent': OSCARS._id,
@@ -541,7 +541,7 @@ async function initializeDatabase() {
         {
             'name': 'My Octopus Teacher',
             'pic': `${appRoot}/assets/data/nominees/movies/My Octopus Teacher.jpg`,
-            'movie': 'My octopus Teacher',
+            'movie': 'My Octopus Teacher',
             'link': 'https://www.imdb.com/title/tt12888462',
             'category': OSCARS.categories[8]._id,
             'awardEvent': OSCARS._id,
@@ -572,9 +572,9 @@ async function initializeDatabase() {
             'awardEvent': OSCARS._id,
         },
         {
-            'name': 'Do not split',
+            'name': 'Do Not Split',
             'pic': `${appRoot}/assets/data/nominees/movies/Do Not Split.jpg`,
-            'movie': 'Do not split',
+            'movie': 'Do Not Split',
             'link': 'https://www.imdb.com/title/tt11512676',
             'category': OSCARS.categories[9]._id,
             'awardEvent': OSCARS._id,
@@ -582,7 +582,7 @@ async function initializeDatabase() {
         {
             'name': 'Hunger Ward',
             'pic': `${appRoot}/assets/data/nominees/movies/Hunger Ward.jpg`,
-            'movie': 'Hunger ward',
+            'movie': 'Hunger Ward',
             'link': 'https://www.imdb.com/title/tt12979636',
             'category': OSCARS.categories[9]._id,
             'awardEvent': OSCARS._id,
