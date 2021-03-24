@@ -933,7 +933,7 @@ async function initializeDatabase() {
         },
         {
             'name': 'Opera',
-            'pic': '#',
+            'pic': `${appRoot}/assets/data/nominees/movies/Opera.jpg`,
             'movie': 'Opera',
             'link': 'https://www.imdb.com/title/tt9764724',
             'category': OSCARS.categories[17]._id,
